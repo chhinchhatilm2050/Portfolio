@@ -42,6 +42,7 @@
     "subtitle":    "Have a project in mind? Let's talk!",
     "name":        "Your Name",
     "email":       "Your Email",
+    "subject":     "Subject",
     "message":     "Your Message",
     "send":        "Send Message",
     "sending":     "Sending...",

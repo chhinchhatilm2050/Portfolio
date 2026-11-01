@@ -9,16 +9,39 @@ const resources = {
   km: { translation: kmTranslation },
 }
 
+const savedLang = localStorage.getItem('language') ?? 'en'
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: localStorage.getItem('language') ?? 'en',
+    lng: savedLang,
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false, // React already handles XSS
     },
   })
 
-export default i18n
+// Sync <html lang="..."> and CSS classes dynamically on language change
+const applyHtmlLanguage = (lng: string) => {
+  if (typeof document !== 'undefined') {
+    document.documentElement.lang = lng
+    document.documentElement.setAttribute('data-lang', lng)
+    if (lng === 'km') {
+      document.documentElement.classList.add('lang-km')
+    } else {
+      document.documentElement.classList.remove('lang-km')
+    }
+  }
+}
 
+// Apply on initial load
+applyHtmlLanguage(savedLang)
+
+// Listen to runtime language changes
+i18n.on('languageChanged', (lng) => {
+  localStorage.setItem('language', lng)
+  applyHtmlLanguage(lng)
+})
+
+export default i18n
