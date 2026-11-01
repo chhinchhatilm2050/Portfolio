@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { motion, AnimatePresence, type Variants } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { Sun, Moon, Globe, ArrowRight } from 'lucide-react'
+import { Sun, Moon, Globe, ArrowRight, X } from 'lucide-react'
 
 interface MobileNavProps {
   isOpen: boolean
@@ -111,15 +111,27 @@ export default function MobileNav({
             className="fixed top-0 right-0 bottom-0 z-50 w-full max-w-xs bg-dark-bg/95 backdrop-blur-xl
                        border-l border-red-500/20 shadow-2xl flex flex-col pt-20 pb-8 px-6 md:hidden"
           >
-            {/* Header / Brand label in drawer */}
+            {/* Header / Brand label in drawer with Close button */}
             <div className="flex items-center justify-between pb-6 border-b border-border/80">
-              <span className="text-sm font-semibold tracking-wider uppercase text-text-muted">
-                Navigation
-              </span>
-              <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-medium bg-red-500/10 text-red-400 border border-red-500/20">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
-                Live
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-semibold tracking-wider uppercase text-text-muted">
+                  Navigation
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-medium bg-red-500/10 text-red-400 border border-red-500/20">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+                  Live
+                </span>
+              </div>
+
+              {/* Close Drawer Button */}
+              <button
+                type="button"
+                onClick={onClose}
+                aria-label="Close navigation menu"
+                className="w-9 h-9 rounded-xl bg-surface/80 border border-border hover:border-red-500/40 text-text-muted hover:text-white flex items-center justify-center transition-all hover:bg-red-500/10 active:scale-95"
+              >
+                <X size={18} />
+              </button>
             </div>
 
             {/* Staggered Navigation Links */}

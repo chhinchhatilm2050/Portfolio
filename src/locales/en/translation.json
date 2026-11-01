@@ -9,25 +9,87 @@
   },
   "hero": {
     "greeting":    "Hi, I'm",
+    "name":        "Chhin Chhat",
     "role":        "Full Stack Developer",
-    "tagline":     "Building modern web experiences with clean code and great design.",
-    "cta_work":    "View My Work",
-    "cta_contact": "Get In Touch",
-    "cta_resume":  "Download CV"
+    "roles": [
+      "Full Stack Developer",
+      "UI/UX Enthusiast",
+      "React & TypeScript Specialist",
+      "Frontend Architect"
+    ],
+    "tagline":     "Crafting high-performance, modern web applications with pixel-perfect design and clean code.",
+    "cta_projects": "View Projects",
+    "cta_contact":  "Contact Me",
+    "cta_resume":   "Download CV",
+    "available":    "Available for freelance & full-time"
   },
   "about": {
     "title":       "About Me",
-    "subtitle":    "A passionate developer who loves turning ideas into reality",
-    "description": "I'm a full stack developer with a passion for creating beautiful and functional web applications. I enjoy working with modern technologies and constantly learning new skills.",
-    "available":   "Available for work"
+    "subtitle":    "Turning ambitious ideas into scalable reality",
+    "description": "I'm a Full Stack Developer specializing in crafting robust web architectures and responsive, accessible interfaces. With a strong eye for UI/UX details and a commitment to clean code, I build digital experiences that deliver real impact.",
+    "stats": {
+      "exp_val": "3+",
+      "exp_lbl": "Years Experience",
+      "proj_val": "25+",
+      "proj_lbl": "Completed Projects",
+      "sat_val": "100%",
+      "sat_lbl": "Client Satisfaction"
+    },
+    "competencies_title": "Core Competencies",
+    "comp_frontend": "Frontend Architecture",
+    "comp_frontend_desc": "React, TypeScript, Next.js, and Tailwind CSS with modular components.",
+    "comp_backend": "Backend & API Engineering",
+    "comp_backend_desc": "Node.js, Express, RESTful APIs, database design, and authentication.",
+    "comp_uiux": "Interactive UI/UX",
+    "comp_uiux_desc": "Declarative Framer Motion animations and responsive, mobile-first design.",
+    "comp_perf": "Performance & Security",
+    "comp_perf_desc": "Fast load speeds, accessible layouts (a11y), and clean architecture."
   },
   "skills": {
-    "title":    "Skills & Technologies",
-    "subtitle": "Tools and technologies I work with"
+    "title":       "Skills & Technologies",
+    "subtitle":    "Tools and modern technologies I work with daily",
+    "cat_all":     "All Stack",
+    "cat_frontend":"Frontend",
+    "cat_backend": "Backend",
+    "cat_tools":   "Tools & DevOps",
+    "level_expert":"Expert",
+    "level_adv":   "Advanced",
+    "level_prof":  "Proficient"
   },
   "experience": {
-    "title":    "Experience",
-    "subtitle": "My professional journey"
+    "title":       "Experience & Journey",
+    "subtitle":    "My professional career path and milestones",
+    "present":     "Present",
+    "roles": [
+      {
+        "period": "2024 - Present",
+        "title": "Senior Full Stack Developer",
+        "company": "Tech Innovations Studio",
+        "desc": "Leading architecture of enterprise-scale React and Node.js web applications, managing microservices, and mentoring junior engineers.",
+        "skills": ["React 19", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "Docker"]
+      },
+      {
+        "period": "2022 - 2024",
+        "title": "Frontend Software Engineer",
+        "company": "Digital Solutions Corp",
+        "desc": "Built high-performance, accessible, and responsive user interfaces using React, Tailwind CSS, and Framer Motion with state-of-the-art UX.",
+        "skills": ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "REST APIs"]
+      },
+      {
+        "period": "2021 - 2022",
+        "title": "Junior Web Developer",
+        "company": "Creative Web Agency",
+        "desc": "Developed interactive client websites, optimized frontend performance, collaborated on UI redesigns, and integrated headless CMS APIs.",
+        "skills": ["JavaScript", "React", "HTML5/CSS3", "Git", "Figma"]
+      },
+      {
+        "period": "2018 - 2022",
+        "title": "B.S. in Computer Science",
+        "company": "National University of Management",
+        "desc": "Graduated with honors. Focused on Software Engineering, Data Structures, Algorithms, Distributed Systems, and Database Management.",
+        "skills": ["Computer Science", "Software Engineering", "Algorithms", "Databases"]
+      }
+    ]
   },
   "projects": {
     "title":       "Projects",

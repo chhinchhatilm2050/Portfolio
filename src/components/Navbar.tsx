@@ -30,14 +30,13 @@ export default function Navbar() {
     localStorage.setItem('language', next)
   }
 
-  // Handle scroll detection for subtle glassmorphism elevation & active section spy
+  // Active section spy & scroll detection
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
 
-      // Active section spy
       const sections = NAV_LINKS.map(link => link.href.slice(1))
-      const scrollPosition = window.scrollY + 120
+      const scrollPosition = window.scrollY + 140
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const sectionId = sections[i]
@@ -67,51 +66,48 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ── Sticky Glassmorphic Navbar ── */}
+      {/* ── Sticky Navbar (Red bottom border ONLY when scrolled to top) ── */}
       <header
-        className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 inset-x-0 z-50 transition-all duration-300  ${
           scrolled
-            ? 'bg-dark-bg/85 backdrop-blur-md border-b border-red-500/20 shadow-lg shadow-black/40'
-            : 'bg-dark-bg/60 backdrop-blur-sm border-b border-red-500/10'
+            ? 'bg-dark-bg/95 backdrop-blur-md border-transparent shadow-lg shadow-black/60 py-3'
+            : 'bg-dark-bg/80 backdrop-blur-md border-red-500/40 py-4'
         }`}
       >
         <nav
-          className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between"
+          className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 flex items-center justify-between"
           aria-label="Main Navigation"
         >
-          {/* Dynamic Logo with Red Gradient Fill & Subtle Hover Scale */}
+          {/* Left: Brand Logo (CC in red border box + Title & Subtitle) */}
           <motion.a
             href="#home"
             onClick={(e) => {
               e.preventDefault()
               handleNavigate('#home')
             }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.96 }}
-            className="group relative flex items-center gap-2 cursor-pointer focus:outline-none"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="flex items-center gap-3 cursor-pointer focus:outline-none group"
             aria-label="Chhin Chhat — Home"
           >
-            {/* Glowing Accent Ring on Hover */}
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-red-600 via-rose-500 to-red-400 p-[1.5px] shadow-sm shadow-red-500/30 group-hover:shadow-red-500/60 transition-shadow">
-              <div className="w-full h-full bg-dark-bg rounded-[10px] flex items-center justify-center">
-                <span className="font-extrabold text-sm tracking-tight bg-gradient-to-r from-red-400 to-rose-300 bg-clip-text text-transparent">
-                  CC
-                </span>
-              </div>
+            {/* Outlined CC box */}
+            <div className="w-10 h-10 rounded-xl border border-red-500 flex items-center justify-center text-red-500 font-bold text-sm tracking-wider shadow-[0_0_12px_rgba(239,68,68,0.25)] group-hover:shadow-[0_0_18px_rgba(239,68,68,0.5)] transition-all">
+              CC
             </div>
+            {/* Title & Subtitle */}
             <div className="flex flex-col">
               <span className="font-bold text-base tracking-tight text-white group-hover:text-red-400 transition-colors">
                 Chhin Chhat
               </span>
-              <span className="text-[10px] text-text-faint -mt-1 tracking-wider uppercase">
+              <span className="text-[10px] text-zinc-500 font-semibold tracking-wider uppercase -mt-0.5">
                 POSIBLE ALL TIME
               </span>
             </div>
           </motion.a>
 
-          {/* Desktop Navigation Links with Animated Floating Active Pill */}
+          {/* Center: Desktop Navigation Links Capsule Pill */}
           <ul
-            className="hidden md:flex items-center gap-1 p-1 rounded-full bg-surface/50 border border-white/5 backdrop-blur-sm"
+            className="hidden md:flex items-center gap-1 p-1 rounded-full bg-zinc-950/80 border border-zinc-800/80 backdrop-blur-md shadow-inner"
             onMouseLeave={() => setHoveredSection(null)}
           >
             {NAV_LINKS.map((link) => {
@@ -127,37 +123,37 @@ export default function Navbar() {
                       handleNavigate(link.href)
                     }}
                     onMouseEnter={() => setHoveredSection(link.href)}
-                    className={`relative z-10 block px-3.5 py-1.5 rounded-full text-xs font-medium transition-colors duration-200 ${
+                    className={`relative z-10 block px-4 py-1.5 rounded-full text-xs transition-colors duration-200 ${
                       isActive
                         ? 'text-white font-semibold'
-                        : 'text-text-muted hover:text-white'
+                        : 'text-zinc-400 hover:text-white font-medium'
                     }`}
                   >
                     {t(link.key)}
                   </a>
 
-                  {/* Active Link Indicator (layoutId="active-pill") */}
+                  {/* Active Link Solid Red Pill */}
                   {isActive && (
                     <motion.div
                       layoutId="active-pill"
-                      className="absolute inset-0 rounded-full bg-gradient-to-r from-red-600 to-red-500 shadow-md shadow-red-500/30 -z-0"
+                      className="absolute inset-0 rounded-full bg-red-500 shadow-[0_0_15px_rgba(239,68,68,0.45)] -z-0"
                       transition={{
                         type: 'spring',
-                        stiffness: 380,
-                        damping: 30,
+                        stiffness: 400,
+                        damping: 32,
                       }}
                     />
                   )}
 
-                  {/* Hover Highlight (when not active) */}
+                  {/* Hover Pill (when not active) */}
                   {!isActive && isHovered && (
                     <motion.div
                       layoutId="hover-pill"
-                      className="absolute inset-0 rounded-full bg-red-500/10 border border-red-500/20 -z-0"
+                      className="absolute inset-0 rounded-full bg-white/5 -z-0"
                       transition={{
                         type: 'spring',
-                        stiffness: 380,
-                        damping: 30,
+                        stiffness: 400,
+                        damping: 32,
                       }}
                     />
                   )}
@@ -166,23 +162,23 @@ export default function Navbar() {
             })}
           </ul>
 
-          {/* Right Side Controls: Language Switcher, Theme Toggle, Mobile Hamburger */}
-          <div className="flex items-center gap-2">
-            {/* Desktop Language Switcher (EN | KM pill toggle) */}
-            <div className="hidden sm:flex items-center p-1 rounded-full bg-surface/70 border border-border">
+          {/* Right: Controls (Language Switcher & Theme Toggle) */}
+          <div className="flex items-center gap-2.5">
+            {/* Desktop Language Switcher Pill */}
+            <div className="hidden sm:flex items-center p-1 rounded-full bg-zinc-950/80 border border-zinc-800/80 backdrop-blur-md">
               <button
                 type="button"
                 onClick={() => {
                   if (currentLang !== 'EN') toggleLang()
                 }}
-                className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold transition-all ${
+                className={`flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold transition-all ${
                   currentLang === 'EN'
-                    ? 'bg-red-500 text-white shadow-sm shadow-red-500/30'
-                    : 'text-text-muted hover:text-white'
+                    ? 'bg-red-500 text-white shadow-[0_0_10px_rgba(239,68,68,0.4)]'
+                    : 'text-zinc-400 hover:text-white'
                 }`}
                 aria-label="Switch to English"
               >
-                <Globe size={11} />
+                <Globe size={12} />
                 EN
               </button>
               <button
@@ -192,8 +188,8 @@ export default function Navbar() {
                 }}
                 className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold transition-all ${
                   currentLang === 'KM'
-                    ? 'bg-red-500 text-white shadow-sm shadow-red-500/30'
-                    : 'text-text-muted hover:text-white font-khmer'
+                    ? 'bg-red-500 text-white shadow-[0_0_10px_rgba(239,68,68,0.4)]'
+                    : 'text-zinc-400 hover:text-white font-khmer'
                 }`}
                 aria-label="Switch to Khmer"
               >
@@ -201,20 +197,20 @@ export default function Navbar() {
               </button>
             </div>
 
-            {/* Dark / Light Theme Switch */}
+            {/* Circular Theme Toggle Button */}
             <motion.button
               type="button"
               onClick={toggleTheme}
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.05 }}
               aria-label={theme === 'dark' ? t('theme.light') : t('theme.dark')}
-              className="p-2 rounded-xl text-text-muted hover:text-white bg-surface/60 hover:bg-surface border border-border
-                         hover:border-red-500/30 hover:shadow-[0_0_12px_rgba(239,68,68,0.2)] transition-all"
+              className="w-9 h-9 rounded-full bg-zinc-950/80 hover:bg-zinc-900 border border-zinc-800/80 hover:border-zinc-700
+                         flex items-center justify-center text-amber-400 hover:text-amber-300 transition-all shadow-sm"
             >
               {theme === 'dark' ? (
-                <Sun size={16} className="text-amber-400" />
+                <Sun size={15} className="text-amber-400" />
               ) : (
-                <Moon size={16} className="text-red-400" />
+                <Moon size={15} className="text-red-400" />
               )}
             </motion.button>
 
@@ -224,11 +220,10 @@ export default function Navbar() {
               onClick={() => setMobileOpen((prev) => !prev)}
               aria-label={mobileOpen ? 'Close Menu' : 'Open Menu'}
               aria-expanded={mobileOpen}
-              className="md:hidden relative w-10 h-10 flex flex-col items-center justify-center rounded-xl bg-surface/60 border border-border hover:border-red-500/40 text-text transition-colors focus:outline-none"
+              className="md:hidden relative w-10 h-10 flex flex-col items-center justify-center rounded-xl bg-zinc-950/80 border border-zinc-800 text-white transition-colors focus:outline-none"
             >
               <span className="sr-only">Toggle navigation menu</span>
               <div className="w-5 h-4 relative flex flex-col justify-between">
-                {/* Top line morphs */}
                 <motion.span
                   animate={
                     mobileOpen
@@ -238,7 +233,6 @@ export default function Navbar() {
                   transition={{ duration: 0.25 }}
                   className="w-full h-0.5 rounded-full origin-center"
                 />
-                {/* Middle line fades */}
                 <motion.span
                   animate={
                     mobileOpen
@@ -248,7 +242,6 @@ export default function Navbar() {
                   transition={{ duration: 0.2 }}
                   className="w-full h-0.5 rounded-full"
                 />
-                {/* Bottom line morphs */}
                 <motion.span
                   animate={
                     mobileOpen
