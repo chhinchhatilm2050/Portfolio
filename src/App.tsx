@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
 import SkillsSection from './components/SkillsSection'
 import ExperienceSection from './components/ExperienceSection'
+import ProjectsSection from './components/ProjectsSection'
 
 function App() {
   const { t } = useTranslation()
@@ -22,14 +23,10 @@ function App() {
       {/* Day 4: Vertical Experience Timeline */}
       <ExperienceSection />
 
-      {/* ── Remaining Milestone Sections (Day 5–6) ── */}
-      <section
-        id="projects"
-        className="min-h-screen flex items-center justify-center border-b border-border/30"
-      >
-        <h2 className="text-3xl font-bold text-white/50">{t('projects.title')} (Day 5)</h2>
-      </section>
+      {/* Day 5: Project Showcase & Detail Modal */}
+      <ProjectsSection />
 
+      {/* ── Remaining Milestone Section (Day 6) ── */}
       <section
         id="contact"
         className="min-h-screen flex items-center justify-center"

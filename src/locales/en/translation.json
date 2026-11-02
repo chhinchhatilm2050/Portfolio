@@ -92,12 +92,22 @@
     ]
   },
   "projects": {
-    "title":       "Projects",
-    "subtitle":    "Things I've built",
-    "filter_all":  "All",
-    "live_demo":   "Live Demo",
-    "source_code": "Source Code",
-    "view_detail": "View Details"
+    "title":           "Featured Projects",
+    "subtitle":        "A showcase of modern web apps, mobile solutions, and open-source systems",
+    "filter_all":      "All",
+    "filter_fullstack":"Full Stack",
+    "filter_mobile":   "Mobile",
+    "filter_web3":     "Web3 / Crypto",
+    "filter_design":   "Design Systems",
+    "live_demo":       "Live Demo",
+    "source_code":     "Source Code",
+    "view_detail":     "View Details",
+    "featured_badge":  "Featured",
+    "key_features":    "Key Features & Architecture",
+    "tech_stack":      "Tech Stack",
+    "role_label":      "Role",
+    "year_label":      "Timeline",
+    "close_modal":     "Close modal"
   },
   "contact": {
     "title":       "Get In Touch",

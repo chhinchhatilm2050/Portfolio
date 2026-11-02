@@ -92,12 +92,22 @@
     ]
   },
   "projects": {
-    "title":       "គម្រោង",
-    "subtitle":    "អ្វីដែលខ្ញុំបានបង្កើត",
-    "filter_all":  "ទាំងអស់",
-    "live_demo":   "សាកល្បងផ្ទាល់",
-    "source_code": "កូដប្រភព",
-    "view_detail": "មើលព័ត៌មានលម្អិត"
+    "title":           "គម្រោងស្នាដៃលេចធ្លោ",
+    "subtitle":        "ការប្រមូលផ្តុំនៃកម្មវិធីវែបទំនើប ដំណោះស្រាយទូរសព្ទដៃ និងប្រព័ន្ធ Open-source",
+    "filter_all":      "ទាំងអស់",
+    "filter_fullstack":"Full Stack",
+    "filter_mobile":   "Mobile",
+    "filter_web3":     "Web3 / Crypto",
+    "filter_design":   "ប្រព័ន្ធរចនា (Design)",
+    "live_demo":       "សាកល្បងផ្ទាល់",
+    "source_code":     "កូដប្រភព",
+    "view_detail":     "មើលព័ត៌មានលម្អិត",
+    "featured_badge":  "គម្រោងលេចធ្លោ",
+    "key_features":    "លក្ខណៈពិសេស & ស្ថាបត្យកម្ម",
+    "tech_stack":      "បច្ចេកវិទ្យាប្រើប្រាស់",
+    "role_label":      "តួនាទី",
+    "year_label":      "កាលបរិច្ឆេទ",
+    "close_modal":     "បិទផ្ទាំង"
   },
   "contact": {
     "title":       "ទំនាក់ទំនង",
