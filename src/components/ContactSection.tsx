@@ -68,12 +68,12 @@ export default function ContactSection() {
     {
       icon: Phone,
       label: t('contact.info_call'),
-      lines: ['+855 12 345 678', '+855 98 765 432'],
+      lines: ['+855 60 66 705'],
     },
     {
       icon: Mail,
       label: t('contact.info_email'),
-      lines: ['chhinchhat@gmail.com', 'contact@chhinchhat.dev'],
+      lines: ['chhinchhat.ilm2050@gmail.com'],
     },
     {
       icon: MapPin,
