@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { ArrowRight, Mail, Globe } from 'lucide-react'
+import { ArrowRight, Mail } from 'lucide-react'
 import { useTypingAnimation } from '../hooks/useTypingAnimation'
 import heroImg from '../assets/chinchhat.png'
 
