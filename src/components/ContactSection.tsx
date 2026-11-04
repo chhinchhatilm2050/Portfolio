@@ -78,7 +78,7 @@ export default function ContactSection() {
     {
       icon: MapPin,
       label: t('contact.info_location'),
-      lines: ['Phnom Penh', 'Cambodia 🇰🇭'],
+      lines: ['Phnom Penh'],
     },
   ]
 
