@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Mail, Heart } from 'lucide-react'
+import { Mail } from 'lucide-react'
 
 // Custom SVG brand icons (Lucide does not include third-party brand logos)
 function GithubIcon({ size = 16, className = '' }: { size?: number; className?: string }) {
