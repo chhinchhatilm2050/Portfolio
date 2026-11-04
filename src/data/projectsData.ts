@@ -24,7 +24,7 @@ export const PROJECTS_DATA: Project[] = [
       km: 'ប្រព័ន្ធកម្មវិធីវែបទិញទំនិញ Full-Stack ពេញលេញដែលត្រូវបានអភិវឌ្ឍឡើងដោយប្រើ Vue.js, TypeScript និង Tailwind CSS សម្រាប់ Frontend ព្រមទាំង RESTful API រឹងមាំលើ Node.js និង Express។ រួមបញ្ចូលប្រព័ន្ធទូទាត់ប្រាក់តាម ABA PayWay ការបញ្ចូលរូបភាពតាម Cloudinary ប្រព័ន្ធសុវត្ថិភាព JWT & OAuth 2.0 មូលដ្ឋានទិន្នន័យ MongoDB និង GitHub Actions CI/CD។',
     },
     tags: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'ABA PayWay', 'Cloudinary', 'Docker', 'GitHub Actions'],
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=1200&q=80',
+    image: '../src/assets/chhatstore.png',
     githubUrl: 'https://github.com/chhinchhatilm2050/e-commerce-fullstack',
     liveUrl: 'https://ecommerce-fullstack-demo.vercel.app',
     keyFeatures: {
@@ -70,7 +70,7 @@ export const PROJECTS_DATA: Project[] = [
       km: 'គម្រោងសិក្សាឆ្នាំទី ២ ឆមាសទី ១ នៅវិទ្យាស្ថាន សេដ្ឋិក។ ជាកម្មវិធីគ្រប់គ្រងបណ្ណាល័យដែលបង្កើតដោយ HTML5, CSS3, Bootstrap 5 និង JavaScript។ ប្រព័ន្ធមានមុខងារចុះឈ្មោះ ចូលប្រើ គ្រប់គ្រងបញ្ជីសៀវភៅ ញែកតាមប្រភេទ ស្វែងរក និងដំណើរការខ្ចី-សងសៀវភៅ។',
     },
     tags: ['JavaScript', 'Bootstrap 5', 'HTML5', 'CSS3', 'Local State', 'Responsive UI'],
-    image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80',
+    image: '../src/assets/library.png',
     githubUrl: 'https://github.com/chhinchhatilm2050/Library-Management',
     liveUrl: 'https://library-management-system-rosy-three.vercel.app',
     keyFeatures: {
@@ -112,7 +112,7 @@ export const PROJECTS_DATA: Project[] = [
       km: 'បង្កើតឡើងក្នុងអំឡុងពេលសិក្សាឆ្នាំទី ១ នៅវិទ្យាស្ថាន សេដ្ឋិក ដោយប្រើ HTML5, CSS3 និង Bootstrap 5។ គេហទំព័រនេះនាំអ្នកប្រើប្រាស់ស្វែងយល់ពីខេត្តក្រុងទាំង ២៥ នៃប្រទេសកម្ពុជា រួមមានតំបន់ទេសចរណ៍ល្បីៗ ម្ហូបអាហារប្រចាំតំបន់ វប្បធម៌ប្រពៃណី និងការអភិវឌ្ឍក្នុងតំបន់នីមួយៗ។',
     },
     tags: ['HTML5', 'CSS3', 'Bootstrap 5', 'Responsive Design', 'Cultural Web App'],
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+    image: '../src/assets/cambodia.png',
     githubUrl: 'https://github.com/chhinchhatilm2050/Product-Map',
     liveUrl: 'https://explore-cambodia-six.vercel.app',
     keyFeatures: {
@@ -154,7 +154,7 @@ export const PROJECTS_DATA: Project[] = [
       km: 'បង្កើតឡើងក្នុងឆ្នាំទី ១ នៅវិទ្យាស្ថាន សេដ្ឋិក។ ជាចំណុចប្រទាក់ហាងលក់សម្លៀកបំពាក់អនឡាញដែលរចនាឡើងជាមួយ HTML5, CSS3 និង Bootstrap 5។ រួមបញ្ចូលតារាងបង្ហាញសម្លៀកបំពាក់ ការញែកតាមតម្លៃនិងទំហំ ផ្ទាំងកន្រ្តកទំនិញ និងទំព័រទូទាត់ប្រាក់។',
     },
     tags: ['HTML5', 'CSS3', 'Bootstrap 5', 'JavaScript', 'E-Commerce UI'],
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80',
+    image: '../src/assets/onlineshop.png',
     githubUrl: 'https://github.com/chhinchhatilm2050/online-shop',
     liveUrl: 'https://online-shop-steel-one.vercel.app',
     keyFeatures: {
@@ -196,7 +196,7 @@ export const PROJECTS_DATA: Project[] = [
       km: 'បង្កើតឡើងក្នុងឆ្នាំទី ១ ដោយប្រើ HTML5, CSS3 និងចលនា CSS Animations ដ៏រស់រវើក។ CineVerse គឺជាគេហទំព័រស្វែងរកភាពយន្តដែលបែងចែកតាមប្រភេទច្បាស់លាស់ដូចជា រឿងរោងភាពយន្ត ភាពយន្តហូលីវូដ រឿង Anime និងរឿងភ័យរន្ធត់ ជាមួយការរចនាបែបងងឹតទាក់ភ្នែក។',
     },
     tags: ['HTML5', 'CSS3 Animations', 'JavaScript', 'Flexbox & Grid', 'UI Layout'],
-    image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80',
+    image: '../src/assets/movie.png',
     githubUrl: 'https://github.com/chhinchhatilm2050/Movie',
     liveUrl: 'https://chhat-movies.vercel.app',
     keyFeatures: {
@@ -238,7 +238,7 @@ export const PROJECTS_DATA: Project[] = [
       km: 'បង្កើតឡើងជាផ្នែកមួយនៃមុខវិជ្ជា UI/UX ក្នុងកម្មវិធីសិក្សា MIS ឆ្នាំទី ២ នៅវិទ្យាស្ថាន សេដ្ឋិក។ បានរចនាផ្ទាំងគំរូ Mobile App High-fidelity និង Wireframe ក្នុង Figma ដោយវិភាគលើ User Flow នៃកម្មវិធីទិញទំនិញល្បីឈ្មោះ Zando និងការរចនាទំព័រកក់សំបុត្រកុនតាមទូរសព្ទដៃយ៉ាងទាក់ទាញ។',
     },
     tags: ['Figma', 'UI/UX Design', 'Wireframing', 'Mobile App UI', 'Prototyping', 'User Flow'],
-    image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80',
+    image: '../src/assets/zendo.png',
     githubUrl: 'https://www.figma.com/design/7sRRYyGvoKe1a8BOyVr9Pd/Project-Zando?node-id=5-2&t=KkawpsXnPGu4RbFB-0',
     liveUrl: 'https://www.figma.com/proto/7sRRYyGvoKe1a8BOyVr9Pd/Project-Zando?node-id=5-2&t=vuTpyCf3eFjfI0WX-1',
     keyFeatures: {
@@ -276,7 +276,7 @@ export const PROJECTS_DATA: Project[] = [
       km: 'បង្កើតឡើងជាផ្នែកមួយនៃមុខវិជ្ជា UI/UX ក្នុងកម្មវិធីសិក្សា MIS ឆ្នាំទី ២ នៅវិទ្យាស្ថាន សេដ្ឋិក។ បានរចនាផ្ទាំងគំរូ Mobile App High-fidelity និង Wireframe ក្នុង Figma ដោយវិភាគលើ User Flow នៃកម្មវិធីកក់សំបុត្រកុនល្បីឈ្មោះ Legend Cinema និងការរចនាទំព័រកក់សំបុត្រកុនតាមទូរសព្ទដៃយ៉ាងទាក់ទាញ។',
     },
     tags: ['Figma', 'UI/UX Design', 'Wireframing', 'Mobile App UI', 'Prototyping', 'User Flow'],
-    image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80',
+    image: '../src/assets/legend.png',
     githubUrl: 'https://www.figma.com/design/AZHfvqKF9Ut4yirbSj1QUB/chhinchhat?node-id=0-1&t=KFMqXMinVzQufivm-1',
     liveUrl: 'https://www.figma.com/proto/AZHfvqKF9Ut4yirbSj1QUB/chhinchhat?node-id=0-1&t=xqIPFYtCs9W7MR71-1',
     keyFeatures: {

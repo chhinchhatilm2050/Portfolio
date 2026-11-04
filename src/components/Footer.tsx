@@ -42,8 +42,8 @@ function LinkedinIcon({ size = 16, className = '' }: { size?: number; className?
 }
 
 const SOCIAL_LINKS = [
-  { icon: GithubIcon,   href: 'https://github.com',    label: 'GitHub' },
-  { icon: LinkedinIcon, href: 'https://linkedin.com',  label: 'LinkedIn' },
+  { icon: GithubIcon,   href: 'https://github.com/chhinchhatilm2050',    label: 'GitHub' },
+  { icon: LinkedinIcon, href: 'https://www.linkedin.com/in/chhin-chhat-7202bb407',  label: 'LinkedIn' },
   { icon: Mail,         href: 'mailto:hello@example.com', label: 'Email' },
 ]
 
