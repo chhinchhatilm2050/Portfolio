@@ -3,47 +3,47 @@
     "home":       "ទំព័រដើម",
     "about":      "អំពីខ្ញុំ",
     "skills":     "ជំនាញ",
-    "experience": "បទពិសោធន៍",
+    "education":  "ការអប់រំ",
     "projects":   "គម្រោង",
     "contact":    "ទំនាក់ទំនង"
   },
   "hero": {
     "greeting":    "សួស្ដី, ខ្ញុំឈ្មោះ",
-    "name":        "ឈិន ឆាត",
+    "name":        "ឈីន ឆាត",
     "role":        "អ្នកអភិវឌ្ឍន៍ Full Stack",
     "roles": [
-      "អ្នកអភិវឌ្ឍន៍ Full Stack",
-      "អ្នកចូលចិត្តការរចនា UI/UX",
-      "អ្នកឯកទេស React & TypeScript",
-      "ស្ថាបត្យករ Frontend"
+      "អ្នកអភិវឌ្ឍន៍ Full Stack ជំនាន់ក្រោយ",
+      "និស្សិតឆ្នាំទី ២ ជំនាញ MIS (SETEC)",
+      "អ្នកអភិវឌ្ឍន៍ Vue.js & Node.js",
+      "អ្នកបង្កើត Frontend & Backend"
     ],
-    "tagline":     "បង្កើតកម្មវិធីវែបទំនើបដែលមានប្រសិទ្ធភាពខ្ពស់ ជាមួយការរចនាដ៏ល្អឥតខ្ចោះ និងកូដស្អាត។",
+    "tagline":     "និស្សិតឆ្នាំទី ២ ឆមាសទី ២ ជំនាញ MIS នៅវិទ្យាស្ថាន សេដ្ឋិក (SETEC)។ មានគោលដៅក្លាយជា Full Stack Developer អាជីព និងបង្កើតកម្មវិធីវែបទំនើប។",
     "cta_projects": "មើលគម្រោង",
     "cta_contact":  "ទំនាក់ទំនងខ្ញុំ",
     "cta_resume":   "ទាញយក CV",
-    "available":    "រួចរាល់សម្រាប់ការងារ"
+    "available":    "រួចរាល់សម្រាប់ការងារ & កម្មសិក្សា"
   },
   "about": {
     "title":       "អំពីខ្ញុំ",
-    "subtitle":    "ប្រែក្លាយគំនិតដ៏អស្ចារ្យទៅជាការពិតដែលអាចពង្រីកបាន",
-    "description": "ខ្ញុំជាអ្នកអភិវឌ្ឍន៍ Full Stack ដែលមានជំនាញក្នុងការបង្កើតស្ថាបត្យកម្មវែបដ៏រឹងមាំ និងចំណុចប្រទាក់ឆ្លើយតបដ៏រហ័ស។ ជាមួយនឹងការយកចិត្តទុកដាក់ខ្ពស់លើព័ត៌មានលម្អិត UI/UX និងការប្តេជ្ញាចិត្តលើកូដស្អាត ខ្ញុំបង្កើតបទពិសោធន៍ឌីជីថលដែលផ្តល់នូវផលជះពិតប្រាកដ។",
+    "subtitle":    "និស្សិតឆ្នាំទី ២ MIS ដែលមានគោលដៅក្លាយជា Full Stack Developer",
+    "description": "ខ្ញុំជានិស្សិតឆ្នាំទី ២ ឆមាសទី ២ ជំនាញប្រព័ន្ធព័ត៌មានគ្រប់គ្រង (MIS) នៅវិទ្យាស្ថាន ស៊ីតិក (SETEC Institute) ដែលបានសិក្សាមូលដ្ឋានគ្រឹះ UI/UX មួយឆមាសជាផ្នែកមួយនៃមុខវិជ្ជា MIS។ ជាមួយនឹងការបណ្តុះបណ្តាលពី Simpaz Center និងវគ្គ Full Stack Bootcamp នៅ TFD គោលដៅចម្បងរបស់ខ្ញុំគឺក្លាយជា Full Stack Developer ដ៏មានសមត្ថភាពខ្ពស់។ ខ្ញុំចូលចិត្តកសាងកម្មវិធីវែបទំនើបជាមួយ Vue, React, Angular និងបង្កើតប្រព័ន្ធ Backend រឹងមាំជាមួយ Node.js, Express និង MongoDB។",
     "stats": {
-      "exp_val": "3+",
-      "exp_lbl": "ឆ្នាំនៃបទពិសោធន៍",
-      "proj_val": "25+",
+      "exp_val": "ឆ្នាំទី ២",
+      "exp_lbl": "ឆមាសទី ២ (SETEC)",
+      "proj_val": "៤+",
       "proj_lbl": "គម្រោងបានបញ្ចប់",
-      "sat_val": "100%",
-      "sat_lbl": "ការពេញចិត្តរបស់អតិថិជន"
+      "sat_val": "១០០%",
+      "sat_lbl": "ការប្តេជ្ញាចិត្តខ្ពស់"
     },
     "competencies_title": "សមត្ថភាពស្នូល",
-    "comp_frontend": "ស្ថាបត្យកម្ម Frontend",
-    "comp_frontend_desc": "React, TypeScript, Tailwind CSS ជាមួយនឹងការរចនាសមាសធាតុបែប Modular។",
-    "comp_backend": "វិស្វកម្ម Backend & API",
-    "comp_backend_desc": "Node.js, Express, RESTful APIs, ការរចនា Database និងប្រព័ន្ធសុវត្ថិភាព។",
-    "comp_uiux": "ការរចនាអន្តរកម្ម UI/UX",
-    "comp_uiux_desc": "ចលនា Framer Motion ដ៏រលូន លំហូរងាយស្រួលប្រើ និងការឆ្លើយតបលើទូរសព្ទដៃ។",
-    "comp_perf": "ប្រសិទ្ធភាព & សុវត្ថិភាព",
-    "comp_perf_desc": "បង្កើនល្បឿននៃការផ្ទុកទំព័រ ភាពងាយស្រួលប្រើប្រាស់ និងស្ថាបត្យកម្មស្អាត។"
+    "comp_frontend": "ការអភិវឌ្ឍ Frontend",
+    "comp_frontend_desc": "បង្កើត UI ឆ្លើយតបរហ័ស និងទំនើបជាមួយ Vue.js, React, Angular, TypeScript និង Tailwind CSS។",
+    "comp_backend": "ការអភិវឌ្ឍ Backend & API",
+    "comp_backend_desc": "បង្កើត RESTful APIs ដ៏រឹងមាំជាមួយ Node.js, Express, MongoDB, Mongoose និង MySQL។",
+    "comp_uiux": "ការរចនា UI/UX & ផលិតផល",
+    "comp_uiux_desc": "រចនា Prototype និង Wireframe ក្នុង Figma ដែលបានរៀនតាមរយៈមុខវិជ្ជា UI/UX ក្នុងដេប៉ាតឺម៉ង់ MIS។",
+    "comp_perf": "DevOps & ការអនុវត្តកូដស្តង់ដារ",
+    "comp_perf_desc": "ការប្រើប្រាស់ Docker, ការធ្វើតេស្ត API ជាមួយ Postman, Git Workflows និង CI/CD។"
   },
   "skills": {
     "title":       "ជំនាញ & បច្ចេកវិទ្យា",
@@ -56,49 +56,41 @@
     "level_adv":   "កម្រិតខ្ពស់",
     "level_prof":  "ស្ទាត់ជំនាញ"
   },
-  "experience": {
-    "title":       "បទពិសោធន៍ & ដំណើរជីវិត",
-    "subtitle":    "មាគ៌ាអាជីពវិជ្ជាជីវៈ និងសមិទ្ធផលសំខាន់ៗរបស់ខ្ញុំ",
+  "education": {
+    "title":       "ការអប់រំ & ការបណ្តុះបណ្តាល",
+    "subtitle":    "ប្រវត្តិការសិក្សា វគ្គបណ្តុះបណ្តាលបច្ចេកវិទ្យា និងវិទ្យាស្ថានរបស់ខ្ញុំ",
     "present":     "បច្ចុប្បន្ន",
     "roles": [
       {
         "period": "២០២៤ - បច្ចុប្បន្ន",
-        "title": "អ្នកអភិវឌ្ឍន៍ Senior Full Stack",
-        "company": "Tech Innovations Studio",
-        "desc": "ដឹកនាំស្ថាបត្យកម្មនៃកម្មវិធីវែបខ្នាតធំដោយប្រើប្រាស់ React និង Node.js គ្រប់គ្រង microservices និងបង្ហាត់បង្រៀនអ្នកអភិវឌ្ឍន៍វ័យក្មេង។",
-        "skills": ["React 19", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "Docker"]
+        "title": "បរិញ្ញាបត្រ ប្រព័ន្ធព័ត៌មានគ្រប់គ្រង (MIS)",
+        "company": "វិទ្យាស្ថាន ស៊ីតិក (SETEC Institute)",
+        "desc": "កំពុងសិក្សាជំនាញប្រព័ន្ធព័ត៌មានគ្រប់គ្រង (MIS) ដោយផ្តោតលើការវិភាគប្រព័ន្ធអាជីវកម្ម មូលដ្ឋានទិន្នន័យ វិស្វកម្មផ្នែកទន់ និងមុខវិជ្ជា UI/UX មួយឆមាស។",
+        "skills": ["MIS", "វិស្វកម្មផ្នែកទន់", "ការវិភាគប្រព័ន្ធ", "ប្រព័ន្ធមូលដ្ឋានទិន្នន័យ", "មូលដ្ឋានគ្រឹះ UI/UX", "Figma"]
       },
       {
-        "period": "២០២២ - ២០២៤",
-        "title": "វិស្វករផ្នែកទន់ Frontend",
-        "company": "Digital Solutions Corp",
-        "desc": "បង្កើត UI ដែលមានប្រសិទ្ធភាពខ្ពស់ ងាយស្រួលប្រើប្រាស់ និងឆ្លើយតបរហ័ស ដោយប្រើ React, Tailwind CSS និង Framer Motion ជាមួយ UX ទំនើប។",
-        "skills": ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "REST APIs"]
+        "period": "៣ ខែ",
+        "title": "វគ្គបណ្តុះបណ្តាល Full Stack Web Developer",
+        "company": "TFD Bootcamp",
+        "desc": "បានបញ្ចប់ការសិក្សាវគ្គ Full Stack Web Developer រយៈពេល ៤ ខែយ៉ាងស៊ីជម្រៅ ដោយសិក្សាអំពី Vue, Express, Node.js, MongoDB, Docker, CI/CD, RESTful API និង Best Practices សម្រាប់អ្នកអភិវឌ្ឍន៍វិជ្ជាជីវៈ។",
+        "skills": ["Vue.js", "Tailwind CSS", "HTML5/CSS3", "Express.js", "Node.js", "MongoDB", "Docker", "CI/CD", "RESTful API", "Best Practices"]
       },
       {
-        "period": "២០២១ - ២០២២",
-        "title": "អ្នកអភិវឌ្ឍន៍ Junior Web",
-        "company": "Creative Web Agency",
-        "desc": "បង្កើតគេហទំព័រសម្រាប់អតិថិជន បង្កើនល្បឿនប្រតិបត្តិការ Frontend សហការកែលម្អ UI និងភ្ជាប់ API នៃប្រព័ន្ធ CMS។",
-        "skills": ["JavaScript", "React", "HTML5/CSS3", "Git", "Figma"]
-      },
-      {
-        "period": "២០១៨ - ២០២២",
-        "title": "បរិញ្ញាបត្រ វិទ្យាសាស្ត្រកុំព្យូទ័រ",
-        "company": "សាកលវិទ្យាល័យជាតិគ្រប់គ្រង",
-        "desc": "បានបញ្ចប់ការសិក្សាដោយកិត្តិយស។ ផ្តោតលើវិស្វកម្មផ្នែកទន់ រចនាសម្ព័ន្ធទិន្នន័យ ក្បួនដោះស្រាយ និងប្រព័ន្ធមូលដ្ឋានទិន្នន័យ។",
-        "skills": ["វិទ្យាសាស្ត្រកុំព្យូទ័រ", "វិស្វកម្មផ្នែកទន់", "ក្បួនដោះស្រាយ", "មូលដ្ឋានទិន្នន័យ"]
+        "period": "៦ ខែ",
+        "title": "ការអភិវឌ្ឍ Frontend & ការសហការការងារជាក្រុម",
+        "company": "Simpaz Center",
+        "desc": "បានបញ្ចប់វគ្គបណ្តុះបណ្តាលរយៈពេល ៦ ខែ ផ្តោតលើការធ្វើការងារជាក្រុម (Teamwork) និងការកសាងចំណុចប្រទាក់អ្នកប្រើប្រាស់ជាមួយ HTML, CSS, Bootstrap, JavaScript, TypeScript និង Angular។",
+        "skills": ["Teamwork", "HTML5", "CSS3", "Bootstrap", "JavaScript", "TypeScript", "Angular"]
       }
     ]
   },
   "projects": {
     "title":           "គម្រោងស្នាដៃលេចធ្លោ",
     "subtitle":        "ការប្រមូលផ្តុំនៃកម្មវិធីវែបទំនើប ដំណោះស្រាយទូរសព្ទដៃ និងប្រព័ន្ធ Open-source",
-    "filter_all":      "ទាំងអស់",
+    "filter_all":      "គម្រោងទាំងអស់",
     "filter_fullstack":"Full Stack",
-    "filter_mobile":   "Mobile",
-    "filter_web3":     "Web3 / Crypto",
-    "filter_design":   "ប្រព័ន្ធរចនា (Design)",
+    "filter_frontend": "Frontend & Web",
+    "filter_uiux":     "ការរចនា UI/UX",
     "live_demo":       "សាកល្បងផ្ទាល់",
     "source_code":     "កូដប្រភព",
     "view_detail":     "មើលព័ត៌មានលម្អិត",
@@ -110,16 +102,22 @@
     "close_modal":     "បិទផ្ទាំង"
   },
   "contact": {
-    "title":       "ទំនាក់ទំនង",
-    "subtitle":    "មានគម្រោងនៅក្នុងចិត្ត? តោះពិភាក្សា!",
-    "name":        "ឈ្មោះរបស់អ្នក",
-    "email":       "អ៊ីមែលរបស់អ្នក",
-    "subject":     "ប្រធានបទ",
-    "message":     "សាររបស់អ្នក",
-    "send":        "ផ្ញើសារ",
-    "sending":     "កំពុងផ្ញើ...",
-    "success":     "ផ្ញើសារដោយជោគជ័យ! ខ្ញុំនឹងឆ្លើយតបទៅអ្នកឆាប់ៗ។",
-    "error":       "មានបញ្ហាកើតឡើង។ សូមព្យាយាមម្តងទៀត។"
+    "title":         "ទំនាក់ទំនង",
+    "get_in_touch":  "ទំនាក់ទំនងមកខ្ញុំ",
+    "desc":          "មានគម្រោងនៅក្នុងចិត្ត ឬចង់និយាយជំរាបសួរ? បំពេញទម្រង់ខាងក្រោម ហើយខ្ញុំនឹងឆ្លើយតបក្នុង ២៤ ម៉ោង។",
+    "info_call":     "ទូរស័ព្ទ",
+    "info_email":    "អ៊ីមែល",
+    "info_location": "ទីតាំង",
+    "name":          "ឈ្មោះ",
+    "email":         "អ៊ីមែល",
+    "subject":       "ប្រធានបទ",
+    "message":       "សារ",
+    "send":          "ផ្ញើសារ",
+    "sending":       "កំពុងផ្ញើ...",
+    "success":       "ផ្ញើសារដោយជោគជ័យ! ខ្ញុំនឹងឆ្លើយតបទៅអ្នកឆាប់ៗ។",
+    "error":         "មានបញ្ហាកើតឡើង។ សូមព្យាយាមម្តងទៀត។",
+    "follow":        "តាមដានខ្ញុំ",
+    "available":     "ទំនេរសម្រាប់ Freelance & Full-time"
   },
   "footer": {
     "rights": "រក្សាសិទ្ធិគ្រប់យ៉ាង។"

@@ -28,29 +28,28 @@ interface SkillItem {
 }
 
 const SKILLS_DATA: SkillItem[] = [
-  // Frontend
-  { id: 'react', name: 'React 19 & Next.js', category: 'frontend', levelKey: 'level_expert', percent: 95, icon: Code2 },
-  { id: 'ts', name: 'TypeScript', category: 'frontend', levelKey: 'level_expert', percent: 92, icon: Cpu },
-  { id: 'tailwind', name: 'Tailwind CSS v4', category: 'frontend', levelKey: 'level_expert', percent: 96, icon: Palette },
-  { id: 'framer', name: 'Framer Motion', category: 'frontend', levelKey: 'level_adv', percent: 88, icon: Layers },
-  { id: 'htmlcss', name: 'HTML5 & Modern CSS', category: 'frontend', levelKey: 'level_expert', percent: 98, icon: Globe },
-  { id: 'vue', name: 'Vue.js / Nuxt', category: 'frontend', levelKey: 'level_prof', percent: 80, icon: Code2 },
+  // ── Frontend ──
+  { id: 'htmlcss',   name: 'HTML5 & CSS3',                 category: 'frontend', levelKey: 'level_expert', percent: 95, icon: Globe },
+  { id: 'tailwind',  name: 'Tailwind CSS',                 category: 'frontend', levelKey: 'level_expert', percent: 95, icon: Palette },
+  { id: 'bootstrap', name: 'Bootstrap 5',                  category: 'frontend', levelKey: 'level_adv',    percent: 85, icon: Layers },
+  { id: 'jsts',      name: 'JavaScript & TypeScript',      category: 'frontend', levelKey: 'level_expert', percent: 90, icon: Cpu },
+  { id: 'vue',       name: 'Vue.js',                       category: 'frontend', levelKey: 'level_expert', percent: 90, icon: Code2 },
+  { id: 'angular',   name: 'Angular',                      category: 'frontend', levelKey: 'level_prof',   percent: 70, icon: Layers },
+  { id: 'react',     name: 'React',                        category: 'frontend', levelKey: 'level_prof',   percent: 60, icon: Code2 },
 
-  // Backend
-  { id: 'node', name: 'Node.js & Express', category: 'backend', levelKey: 'level_adv', percent: 90, icon: Server },
-  { id: 'postgres', name: 'PostgreSQL & SQL', category: 'backend', levelKey: 'level_adv', percent: 86, icon: Database },
-  { id: 'mongodb', name: 'MongoDB & Mongoose', category: 'backend', levelKey: 'level_prof', percent: 82, icon: Database },
-  { id: 'api', name: 'REST & GraphQL APIs', category: 'backend', levelKey: 'level_adv', percent: 90, icon: Server },
-  { id: 'auth', name: 'JWT & OAuth Security', category: 'backend', levelKey: 'level_adv', percent: 85, icon: ShieldCheck },
-  { id: 'prisma', name: 'Prisma ORM', category: 'backend', levelKey: 'level_prof', percent: 84, icon: Database },
+  // ── Backend ──
+  { id: 'node_express', name: 'Node.js & Express.js',      category: 'backend',  levelKey: 'level_expert', percent: 90, icon: Server },
+  { id: 'mongodb',      name: 'MongoDB & Mongoose',        category: 'backend',  levelKey: 'level_expert', percent: 90, icon: Database },
+  { id: 'rest_api',     name: 'RESTful API Architecture',  category: 'backend',  levelKey: 'level_expert', percent: 90, icon: Server },
+  { id: 'auth_jwt',     name: 'JWT & OAuth Security',      category: 'backend',  levelKey: 'level_adv',    percent: 80, icon: ShieldCheck },
+  { id: 'mysql',        name: 'MySQL Database',            category: 'backend',  levelKey: 'level_prof',   percent: 70, icon: Database },
+  { id: 'csharp',       name: 'C# / .NET',                 category: 'backend',  levelKey: 'level_prof',   percent: 50, icon: Terminal },
 
-  // Tools & DevOps
-  { id: 'git', name: 'Git & GitHub Workflows', category: 'tools', levelKey: 'level_expert', percent: 95, icon: GitBranch },
-  { id: 'docker', name: 'Docker Containers', category: 'tools', levelKey: 'level_prof', percent: 80, icon: Container },
-  { id: 'vite', name: 'Vite & Webpack', category: 'tools', levelKey: 'level_adv', percent: 90, icon: Wrench },
-  { id: 'figma', name: 'Figma to Code', category: 'tools', levelKey: 'level_adv', percent: 86, icon: Palette },
-  { id: 'linux', name: 'Linux CLI & Scripting', category: 'tools', levelKey: 'level_prof', percent: 82, icon: Terminal },
-  { id: 'postman', name: 'Postman & CI/CD', category: 'tools', levelKey: 'level_adv', percent: 88, icon: Wrench },
+  // ── Tools & DevOps ──
+  { id: 'git_github',   name: 'Git & GitHub Workflows',    category: 'tools',    levelKey: 'level_adv',    percent: 80, icon: GitBranch },
+  { id: 'postman_cicd', name: 'Postman & CI/CD',           category: 'tools',    levelKey: 'level_prof',   percent: 70, icon: Wrench },
+  { id: 'figma',        name: 'Figma (UI/UX Design)',      category: 'tools',    levelKey: 'level_prof',   percent: 70, icon: Palette },
+  { id: 'docker',       name: 'Docker Containers',         category: 'tools',    levelKey: 'level_prof',   percent: 50, icon: Container },
 ]
 
 export default function SkillsSection() {
@@ -85,12 +84,12 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="relative py-24 px-6 sm:px-10 lg:px-12 w-full bg-dark-bg border-t border-zinc-800/60 overflow-hidden"
+      className="relative py-24 w-full bg-dark-bg border-t border-zinc-800/60 overflow-hidden"
     >
       {/* Background Soft Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/5 rounded-full blur-[160px] pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto w-full">
+      <div className="max-w-7xl mx-auto w-full px-6 sm:px-10 lg:px-12">
         
         {/* Section Header */}
         <motion.div
@@ -100,7 +99,7 @@ export default function SkillsSection() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-xs font-semibold text-red-400 mb-4 shadow-sm shadow-red-500/10">
+          <div className="inline-flex animate-bounce items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-xs font-semibold text-red-400 mb-4 shadow-sm shadow-red-500/10">
             <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
             {t('skills.title')}
           </div>
@@ -120,7 +119,7 @@ export default function SkillsSection() {
                   key={cat.key}
                   type="button"
                   onClick={() => setSelectedCategory(cat.key)}
-                  className={`relative px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-200 ${
+                  className={`cursor-pointer relative px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-200 ${
                     isSelected ? 'text-white' : 'text-zinc-400 hover:text-white'
                   }`}
                 >
@@ -128,7 +127,7 @@ export default function SkillsSection() {
                   {isSelected && (
                     <motion.div
                       layoutId="active-skill-tab"
-                      className="absolute inset-0 rounded-full bg-red-500 shadow-[0_0_18px_rgba(239,68,68,0.4)]"
+                      className="absolute animate-pulse inset-0 rounded-full bg-red-500 shadow-[0_0_18px_rgba(239,68,68,0.4)]"
                       transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                     />
                   )}

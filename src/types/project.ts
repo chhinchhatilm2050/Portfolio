@@ -1,4 +1,4 @@
-export type ProjectCategory = 'all' | 'fullstack' | 'mobile' | 'web3' | 'design'
+export type ProjectCategory = 'all' | 'fullstack' | 'frontend' | 'uiux'
 
 export interface LocalizedString {
   en: string
@@ -15,7 +15,7 @@ export interface Project {
   title: LocalizedString
   description: LocalizedString
   fullDescription: LocalizedString
-  category: 'fullstack' | 'mobile' | 'web3' | 'design'
+  category: 'fullstack' | 'frontend' | 'uiux'
   tags: string[]
   image: string
   githubUrl: string

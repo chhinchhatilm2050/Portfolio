@@ -16,34 +16,34 @@ export default function AboutSection() {
       icon: Code2,
       title: t('about.comp_frontend'),
       desc: t('about.comp_frontend_desc'),
-      tags: ['React', 'TypeScript', 'Tailwind', 'Next.js'],
+      tags: ['Vue.js', 'Tailwind CSS', 'Angular', 'React', 'TypeScript'],
     },
     {
       icon: Server,
       title: t('about.comp_backend'),
       desc: t('about.comp_backend_desc'),
-      tags: ['Node.js', 'Express', 'PostgreSQL', 'REST APIs'],
+      tags: ['Node.js', 'Express.js', 'MongoDB', 'MySQL', 'RESTful API'],
     },
     {
       icon: Palette,
       title: t('about.comp_uiux'),
       desc: t('about.comp_uiux_desc'),
-      tags: ['Framer Motion', 'Figma', 'Responsive', 'Micro-interactions'],
+      tags: ['Figma', 'UI/UX Design', 'Wireframing', 'Prototyping'],
     },
     {
       icon: Zap,
       title: t('about.comp_perf'),
       desc: t('about.comp_perf_desc'),
-      tags: ['Vite', 'SEO', 'Accessibility', 'Clean Code'],
+      tags: ['Docker', 'Postman', 'Git & GitHub', 'CI/CD'],
     },
   ]
 
   return (
     <section
       id="about"
-      className="relative py-24 px-4 sm:px-6 bg-dark-bg/60 border-t border-border/40"
+      className="relative py-24 w-full bg-dark-bg/60 border-t border-border/40"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
         
         {/* Section Header */}
         <motion.div
@@ -53,7 +53,7 @@ export default function AboutSection() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-xs font-semibold text-red-400 mb-3">
+          <div className="inline-flex animate-bounce items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-xs font-semibold text-red-400 mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
             {t('about.title')}
           </div>
@@ -85,15 +85,15 @@ export default function AboutSection() {
             <div className="pt-6 border-t border-border/60 flex flex-wrap gap-4 text-xs font-medium text-text-muted">
               <span className="flex items-center gap-1.5 text-white">
                 <CheckCircle2 size={16} className="text-red-500" />
-                Modern Stack Architecture
+                SETEC Year 2 Semester 2
               </span>
               <span className="flex items-center gap-1.5 text-white">
                 <CheckCircle2 size={16} className="text-red-500" />
-                Pixel-Perfect Delivery
+                Aspiring Full Stack Developer
               </span>
               <span className="flex items-center gap-1.5 text-white">
                 <CheckCircle2 size={16} className="text-red-500" />
-                Scalable & Clean Code
+                MIS Major & System Analysis
               </span>
             </div>
           </motion.div>

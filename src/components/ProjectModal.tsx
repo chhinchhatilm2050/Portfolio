@@ -125,9 +125,9 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
               )}
 
               {/* Category Pill */}
-              <div className="absolute bottom-4 left-6 z-10 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-zinc-900/90 text-zinc-300 border border-zinc-700/80 backdrop-blur-md capitalize">
+              <div className="absolute bottom-4 left-6 z-10 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-zinc-900/90 text-zinc-300 border border-zinc-700/80 backdrop-blur-md">
                 <Layers size={12} className="text-red-400" />
-                {project.category}
+                {project.category === 'fullstack' ? 'Full Stack' : project.category === 'uiux' ? 'UI/UX Design' : 'Frontend'}
               </div>
             </div>
 

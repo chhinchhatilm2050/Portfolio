@@ -1,245 +1,295 @@
 import type { Project } from '../types/project'
 
 export const PROJECTS_DATA: Project[] = [
+  // ── 1. Full-Stack E-Commerce Web Application (Featured) ──
   {
-    id: 'nexus-cloud',
+    id: 'fullstack-ecommerce',
     category: 'fullstack',
     featured: true,
-    title: {
-      en: 'Nexus SaaS Cloud Platform',
-      km: 'ប្រព័ន្ធ Nexus SaaS Cloud Platform',
-    },
-    description: {
-      en: 'Enterprise-grade microservices workspace with real-time telemetry, collaborative kanban, and automated CI/CD pipeline triggers.',
-      km: 'កម្មវិធីគ្រប់គ្រងការងារខ្នាតសហគ្រាសជាមួយការត្រួតពិនិត្យ Telemetry ផ្ទាល់ ការងារជាក្រុម Kanban និងប្រព័ន្ធ CI/CD ដោយស្វ័យប្រវត្តិ។',
-    },
-    fullDescription: {
-      en: 'Nexus is a high-performance developer cloud workspace designed for high-velocity software engineering teams. Built on Next.js 15, TypeScript, Node.js, and PostgreSQL, it offers distributed task queuing, end-to-end WebSocket telemetry, dynamic team permissions, and real-time activity streaming.',
-      km: 'Nexus គឺជាប្រព័ន្ធ Cloud សម្រាប់ក្រុមវិស្វករផ្នែកទន់ដែលត្រូវការល្បឿន និងប្រសិទ្ធភាពខ្ពស់។ បង្កើតឡើងដោយ Next.js 15, TypeScript, Node.js និង PostgreSQL វាផ្តល់នូវប្រព័ន្ធចែកចាយការងារ Telemetry តាម WebSocket ការកំណត់សិទ្ធិក្រុមការងារ និងការតាមដានសកម្មភាពភ្លាមៗ។',
-    },
-    tags: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'Docker'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
-    githubUrl: 'https://github.com/chhin-chhat/nexus-saas-cloud',
-    liveUrl: 'https://nexus-cloud-demo.vercel.app',
-    timeline: '2024',
+    timeline: 'Year 2 (2024)',
     role: {
-      en: 'Lead Full Stack Architect',
-      km: 'ប្រធានស្ថាបត្យករ Full Stack',
+      en: 'Full Stack Developer',
+      km: 'អ្នកអភិវឌ្ឍន៍ Full Stack',
     },
-    keyFeatures: {
-      en: [
-        'Real-time multi-tenant collaborative dashboard with zero-latency WebSockets',
-        'Role-Based Access Control (RBAC) powered by JSON Web Tokens and Redis caching',
-        'Comprehensive database migration suite with Prisma ORM & PostgreSQL',
-        'Docker containerized deployment pipeline with health checks and auto-scaling',
-      ],
-      km: [
-        'ផ្ទាំងគ្រប់គ្រងសហការបែប Multi-tenant ភ្លាមៗដោយគ្មានភាពយឺតយ៉ាវតាម WebSockets',
-        'ប្រព័ន្ធគ្រប់គ្រងសិទ្ធិ (RBAC) ដំណើរការដោយ JWT និង Redis Caching',
-        'ការគ្រប់គ្រង Database ពេញលេញជាមួយ Prisma ORM និង PostgreSQL',
-        'ប្រព័ន្ធ Deploy តាម Docker Container ជាមួយនឹងការត្រួតពិនិត្យសុខភាពប្រព័ន្ធ',
-      ],
-    },
-  },
-  {
-    id: 'apex-ecommerce',
-    category: 'fullstack',
-    featured: true,
     title: {
-      en: 'Apex Multi-Vendor Marketplace',
-      km: 'ផ្សារអេឡិចត្រូនិក Apex Multi-Vendor',
+      en: 'Full-Stack E-Commerce Web Application',
+      km: 'កម្មវិធីវែបទិញទំនិញ Full-Stack E-Commerce',
     },
     description: {
-      en: 'Modern high-conversion marketplace featuring instantaneous search, secure Stripe payments, and vendor analytics dashboards.',
-      km: 'ទីផ្សារឌីជីថលទំនើបដែលមានប្រព័ន្ធស្វែងរករហ័ស ការទូទាត់ប្រាក់ប្រកបដោយសុវត្ថិភាពតាម Stripe និងផ្ទាំងគ្រប់គ្រងសម្រាប់អ្នកលក់។',
+      en: 'Complete e-commerce platform built with Vue 3, TypeScript, Node.js, Express, MongoDB, ABA PayWay payment gateway, Cloudinary image pipeline, and JWT security.',
+      km: 'ប្រព័ន្ធទិញទំនិញអេឡិចត្រូនិកពេញលេញ បង្កើតជាមួយ Vue 3, TypeScript, Node.js, Express, MongoDB, ការទូទាត់ប្រាក់តាម ABA PayWay និង Cloudinary។',
     },
     fullDescription: {
-      en: 'Apex Marketplace delivers an ultra-smooth retail experience with server-side rendering, instant product filtering via Meilisearch, integrated multi-currency Stripe checkout, and automated inventory sync. Built with React 19, Express, MongoDB, and Tailwind CSS.',
-      km: 'Apex Marketplace ផ្តល់នូវបទពិសោធន៍ទិញទំនិញដ៏រលូនជាមួយ Server-side Rendering ការស្វែងរកទំនិញរហ័សតាម Meilisearch ការទូទាត់ពហុរូបិយប័ណ្ណតាម Stripe និងការធ្វើសមកាលកម្មស្តុកទំនិញស្វ័យប្រវត្តិ។',
+      en: 'An end-to-end full-stack e-commerce web platform engineered with Vue.js, TypeScript, and Tailwind CSS on the frontend, powered by a robust RESTful API built on Node.js and Express. Features secure payment processing via ABA PayWay integration, Cloudinary image pipeline with Multer, JWT session management, OAuth 2.0 social authentication, MongoDB indexing and aggregation, and automated CI/CD via GitHub Actions.',
+      km: 'ប្រព័ន្ធកម្មវិធីវែបទិញទំនិញ Full-Stack ពេញលេញដែលត្រូវបានអភិវឌ្ឍឡើងដោយប្រើ Vue.js, TypeScript និង Tailwind CSS សម្រាប់ Frontend ព្រមទាំង RESTful API រឹងមាំលើ Node.js និង Express។ រួមបញ្ចូលប្រព័ន្ធទូទាត់ប្រាក់តាម ABA PayWay ការបញ្ចូលរូបភាពតាម Cloudinary ប្រព័ន្ធសុវត្ថិភាព JWT & OAuth 2.0 មូលដ្ឋានទិន្នន័យ MongoDB និង GitHub Actions CI/CD។',
     },
-    tags: ['React 19', 'Express.js', 'MongoDB', 'Stripe API', 'Tailwind CSS', 'Redux Toolkit'],
+    tags: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'ABA PayWay', 'Cloudinary', 'Docker', 'GitHub Actions'],
     image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=1200&q=80',
-    githubUrl: 'https://github.com/chhin-chhat/apex-marketplace',
-    liveUrl: 'https://apex-marketplace-demo.vercel.app',
-    timeline: '2024',
-    role: {
-      en: 'Full Stack Engineer',
-      km: 'វិស្វករ Full Stack',
-    },
+    githubUrl: 'https://github.com/chhinchhatilm2050/e-commerce-fullstack',
+    liveUrl: 'https://ecommerce-fullstack-demo.vercel.app',
     keyFeatures: {
       en: [
-        'Faceted search with sub-50ms query response times using modern indexing',
-        'Stripe webhooks handling checkout sessions, refunds, and merchant payouts',
-        'Dynamic vendor dashboards for inventory management and sales forecasts',
-        'Optimized responsive layouts with 99+ Google Lighthouse score',
+        'Frontend: Responsive UI layouts using Vue.js, TypeScript, and Tailwind CSS for product listings, shopping carts, and checkout dashboards',
+        'Backend & APIs: Scalable RESTful APIs built on Node.js and Express.js handling product management, user orders, and ABA PayWay gateway integration',
+        'Cloud Storage: Integrated Cloudinary API with Multer middleware for optimized product image processing and storage',
+        'Authentication & Security: Secure JWT session flows, OAuth 2.0 social logins, email verification, and OWASP-compliant rate-limiting middleware',
+        'Database Management: Optimized MongoDB collections, schemas, aggregation pipelines, and indexing for ultra-fast query retrieval',
+        'CI Pipeline: Automated frontend and backend testing and deployment integration using GitHub Actions',
       ],
       km: [
-        'ប្រព័ន្ធស្វែងរកទំនិញកម្រិតខ្ពស់ឆ្លើយតបក្រោម 50ms ដោយប្រើ Indexing ទំនើប',
-        'Stripe Webhooks គ្រប់គ្រងការទូទាត់ ការសងប្រាក់វិញ និងការទូទាត់ឱ្យអ្នកលក់',
-        'ផ្ទាំងគ្រប់គ្រងអ្នកលក់សម្រាប់ការគ្រប់គ្រងស្តុកទំនិញ និងការព្យាករណ៍ការលក់',
-        'ការរចនាទំព័រឆ្លើយតបបានល្អឥតខ្ចោះជាមួយពិន្ទុ Google Lighthouse 99+',
+        'Frontend: បង្កើត UI ឆ្លើយតបរហ័សដោយប្រើ Vue.js, TypeScript និង Tailwind CSS សម្រាប់តារាងផលិតផល កន្រ្តកទំនិញ និងផ្ទាំងគ្រប់គ្រង',
+        'Backend & APIs: បង្កើត RESTful APIs ជាមួយ Node.js និង Express គ្រប់គ្រងផលិតផល ការបញ្ជាទិញ និងការទូទាត់តាម ABA PayWay',
+        'Cloud Storage: ភ្ជាប់ Cloudinary API ជាមួយ Multer middleware សម្រាប់ការផ្ទុកនិងបង្ហោះរូបភាពផលិតផល',
+        'Authentication & Security: ប្រព័ន្ធសុវត្ថិភាព JWT, OAuth 2.0, ការផ្ទៀងផ្ទាត់អ៊ីមែល និង OWASP rate-limiting ការពារការវាយប្រហារ',
+        'Database Management: រៀបចំ MongoDB schemas, queries, aggregation និង indexing សម្រាប់ទាញយកទិន្នន័យលឿនរហ័ស',
+        'CI Pipeline: រៀបចំប្រព័ន្ធស្វ័យប្រវត្តិកម្ម CI/CD សម្រាប់ Frontend និង Backend តាមរយៈ GitHub Actions',
       ],
     },
   },
+
+  // ── 2. Library Management System ──
   {
-    id: 'pulsefit-mobile',
-    category: 'mobile',
-    featured: false,
-    title: {
-      en: 'PulseFit Workout & Health Tracker',
-      km: 'កម្មវិធីសុខភាព PulseFit Workout Tracker',
-    },
-    description: {
-      en: 'Cross-platform mobile application for tracking athletic workouts, biometric calorie metrics, and AI workout routines.',
-      km: 'កម្មវិធីទូរសព្ទដៃសម្រាប់តាមដានការហាត់ប្រាណ ការគណនាកាឡូរីជីវមាត្រ និងការណែនាំលំហាត់ប្រាណដោយ AI។',
-    },
-    fullDescription: {
-      en: 'PulseFit is a cross-platform mobile app built using React Native and Expo. It features offline-first local SQLite sync, Apple HealthKit & Google Fit sensor integration, customizable workout split builders, and fluid 60fps gesture animations powered by React Native Reanimated.',
-      km: 'PulseFit គឺជាកម្មវិធីទូរសព្ទឆ្លងកាត់ប្រព័ន្ធប្រតិបត្តិការដែលបង្កើតដោយ React Native និង Expo។ វាដំណើរការទោះគ្មានអ៊ីនធឺណិត (Offline-first) ភ្ជាប់ជាមួយ Apple HealthKit & Google Fit និងមានចលនា 60fps ដ៏រលូន។',
-    },
-    tags: ['React Native', 'Expo', 'TypeScript', 'SQLite', 'HealthKit API', 'Reanimated'],
-    image: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80',
-    githubUrl: 'https://github.com/chhin-chhat/pulsefit-mobile',
-    liveUrl: 'https://expo.dev/@chhin-chhat/pulsefit',
-    timeline: '2023',
-    role: {
-      en: 'Mobile App Developer',
-      km: 'អ្នកបង្កើតកម្មវិធីទូរសព្ទដៃ',
-    },
-    keyFeatures: {
-      en: [
-        'Seamless integration with Apple HealthKit and Google Fit sensor APIs',
-        'Offline-first architecture with automatic background synchronization',
-        'Interactive SVG visual progress charts and body muscle heatmap',
-        'Haptic feedback and 60fps gesture interactions',
-      ],
-      km: [
-        'ការតភ្ជាប់យ៉ាងរលូនជាមួយ Apple HealthKit និង Google Fit APIs',
-        'ស្ថាបត្យកម្ម Offline-first ធ្វើសមកាលកម្មទិន្នន័យស្វ័យប្រវត្តិកាលណាមានអ៊ីនធឺណិត',
-        'គំនូសតាងវឌ្ឍនភាព SVG អន្តរកម្ម និងផែនទីកម្តៅសាច់ដុំ',
-        'ការឆ្លើយតបញ័រ (Haptic) និងចលនាប៉ះបញ្ជា 60fps',
-      ],
-    },
-  },
-  {
-    id: 'angkor-voyage',
-    category: 'mobile',
-    featured: false,
-    title: {
-      en: 'Angkor Voyage Travel Companion',
-      km: 'កម្មវិធីទេសចរណ៍ Angkor Voyage',
-    },
-    description: {
-      en: 'Interactive Cambodian cultural travel guide with offline GPS map routing, heritage storytelling, and ticket reservations.',
-      km: 'មគ្គុទ្ទេសក៍ទេសចរណ៍វប្បធម៌កម្ពុជាជាមួយផែនទី GPS ក្រៅបណ្តាញ រឿងរ៉ាវបេតិកភណ្ឌ និងការកក់សំបុត្រ។',
-    },
-    fullDescription: {
-      en: 'Angkor Voyage empowers domestic and international tourists to discover historical temples and local hidden culinary gems across Cambodia. Features interactive offline vector maps, multilingual audio guides (Khmer & English), and seamless mobile banking payments.',
-      km: 'Angkor Voyage ជួយដល់ភ្ញៀវទេសចរជាតិនិងអន្តរជាតិក្នុងការស្វែងយល់ពីប្រាសាទបុរាណ និងអាហារដ្ឋានឆ្ងាញ់ៗនៅកម្ពុជា។ មានផែនទីវ៉ិចទ័រក្រៅបណ្តាញ មគ្គុទ្ទេសក៍សំឡេងពហុភាសា និងការទូទាត់ប្រាក់តាមធនាគារចល័ត។',
-    },
-    tags: ['React Native', 'Mapbox GL', 'Node.js', 'Khmer Localization', 'Tailwind Mobile'],
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-    githubUrl: 'https://github.com/chhin-chhat/angkor-voyage',
-    liveUrl: 'https://angkorvoyage.app',
-    timeline: '2023',
-    role: {
-      en: 'Frontend & Mobile Lead',
-      km: 'ប្រធានផ្នែក Frontend & Mobile',
-    },
-    keyFeatures: {
-      en: [
-        'Custom Mapbox integration with offline vector tile caching for temple ruins',
-        'Audio narration streaming in Khmer and English with background playback',
-        'Integrated Bakong KHQR mobile payment gateway',
-        'Curated cultural itineraries tailored to traveler duration',
-      ],
-      km: [
-        'ភ្ជាប់ជាមួយ Mapbox ជាមួយការរក្សាទុកផែនទីក្រៅបណ្តាញសម្រាប់តំបន់ប្រាសាទ',
-        'ការចាក់សំឡេងរៀបរាប់ជាភាសាខ្មែរ និងអង់គ្លេស',
-        'ប្រព័ន្ធទូទាត់ប្រាក់តាមបាគង KHQR ដ៏ងាយស្រួល',
-        'ការរៀបចំកាលវិភាគដើរលេងតាមបែបវប្បធម៌សមស្របតាមពេលវេលារបស់ភ្ញៀវ',
-      ],
-    },
-  },
-  {
-    id: 'aetheria-defi',
-    category: 'web3',
+    id: 'library-management',
+    category: 'frontend',
     featured: true,
+    timeline: 'Year 2, Semester 1',
+    role: {
+      en: 'Frontend Developer',
+      km: 'អ្នកអភិវឌ្ឍន៍ Frontend',
+    },
     title: {
-      en: 'Aetheria DeFi Liquidity Protocol',
-      km: 'ពិធីការ Aetheria DeFi Liquidity',
+      en: 'Library Management System',
+      km: 'ប្រព័ន្ធគ្រប់គ្រងបណ្ណាល័យ (Library Management)',
     },
     description: {
-      en: 'Decentralized automated market maker (AMM) dashboard with real-time liquidity pools, token swaps, and yield analytics.',
-      km: 'ផ្ទាំងគ្រប់គ្រង AMM វិមជ្ឈការជាមួយអាងសន្ទនីយភាព (Liquidity Pools) ការដោះដូរកាក់ និងការវិភាគទិន្នផលភ្លាមៗ។',
+      en: 'Interactive web application for university libraries allowing students to register, log in, browse catalogs, filter categories, and manage book borrowings.',
+      km: 'ប្រព័ន្ធគ្រប់គ្រងបណ្ណាល័យសាកលវិទ្យាល័យ ដែលអនុញ្ញាតឱ្យសិស្សចុះឈ្មោះ ចូលប្រើប្រាស់ ស្វែងរកសៀវភៅ ញែកប្រភេទ និងខ្ចីសៀវភៅ។',
     },
     fullDescription: {
-      en: 'Aetheria is an intuitive decentralized finance interface built for modern Web3 users. Integrated with Wagmi, Viem, and Ethers.js, it provides seamless wallet connection, slippage protection, candlestick charting using TradingView widgets, and real-time gas optimization algorithms.',
-      km: 'Aetheria គឺជាផ្ទាំងកម្មវិធីហិរញ្ញវត្ថុវិមជ្ឈការដែលរចនាឡើងសម្រាប់អ្នកប្រើប្រាស់ Web3 ទំនើប។ ភ្ជាប់ជាមួយ Wagmi, Viem និង Ethers.js វាផ្តល់នូវការតភ្ជាប់កាបូបឌីជីថលសុវត្ថិភាព ការការពារ Slippage និងក្រាហ្វិក TradingView។',
+      en: 'Developed during Year 2 Semester 1 at SETEC Institute. A comprehensive client-side library management web application built with HTML5, CSS3, Bootstrap 5, and JavaScript. The system enables user account authentication, book catalog management, category filtering, search algorithms, and interactive borrowing/returning book lifecycle with responsive design.',
+      km: 'គម្រោងសិក្សាឆ្នាំទី ២ ឆមាសទី ១ នៅវិទ្យាស្ថាន សេដ្ឋិក។ ជាកម្មវិធីគ្រប់គ្រងបណ្ណាល័យដែលបង្កើតដោយ HTML5, CSS3, Bootstrap 5 និង JavaScript។ ប្រព័ន្ធមានមុខងារចុះឈ្មោះ ចូលប្រើ គ្រប់គ្រងបញ្ជីសៀវភៅ ញែកតាមប្រភេទ ស្វែងរក និងដំណើរការខ្ចី-សងសៀវភៅ។',
     },
-    tags: ['Web3', 'React', 'Wagmi / Viem', 'TypeScript', 'Tailwind CSS', 'Ethers.js'],
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80',
-    githubUrl: 'https://github.com/chhin-chhat/aetheria-defi-amm',
-    liveUrl: 'https://aetheria-defi.vercel.app',
-    timeline: '2024',
-    role: {
-      en: 'Web3 Frontend Engineer',
-      km: 'វិស្វករ Web3 Frontend',
-    },
+    tags: ['JavaScript', 'Bootstrap 5', 'HTML5', 'CSS3', 'Local State', 'Responsive UI'],
+    image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80',
+    githubUrl: 'https://github.com/chhinchhatilm2050/Library-Management',
+    liveUrl: 'https://library-management-system-rosy-three.vercel.app',
     keyFeatures: {
       en: [
-        'Multi-wallet support (MetaMask, Coinbase Wallet, WalletConnect v2)',
-        'Live candlestick charts with TradingView Lightweight Charts library',
-        'Automated slippage tolerance calculator and MEV protection routing',
-        'Smart contract event listeners with instant toast notifications',
+        'User registration, authentication forms, and client profile state management',
+        'Dynamic book catalog with categorized filtering (Tech, Science, Literature, History)',
+        'Interactive borrowing and returning workflow with status indicators',
+        'Fully responsive layout designed with Bootstrap 5 utility classes and components',
       ],
       km: [
-        'គាំទ្រកាបូបឌីជីថលច្រើនប្រភេទ (MetaMask, Coinbase Wallet, WalletConnect v2)',
-        'ក្រាហ្វិកទៀនផ្សារហ៊ុនផ្ទាល់ជាមួយបណ្ណាល័យ TradingView Charts',
-        'ការគណនាកម្រិត Slippage និងប្រព័ន្ធការពារ MEV ដោយស្វ័យប្រវត្តិ',
-        'ការតាមដានព្រឹត្តិការណ៍ Smart Contract ជាមួយការជូនដំណឹងភ្លាមៗ',
+        'ទម្រង់ចុះឈ្មោះ ចូលប្រើប្រាស់ និងការគ្រប់គ្រងគណនីអ្នកប្រើប្រាស់',
+        'បញ្ជីសៀវភៅដែលបង្ហាញតាមប្រភេទច្បាស់លាស់ (បច្ចេកវិទ្យា វិទ្យាសាស្ត្រ អក្សរសាស្ត្រ)',
+        'ប្រព័ន្ធដំណើរការខ្ចី និងសងសៀវភៅ ជាមួយការបង្ហាញស្ថានភាព',
+        'រចនាឡើងយ៉ាងស្រស់ស្អាតលើគ្រប់ទំហំអេក្រង់ដោយប្រើ Bootstrap 5',
+      ],
+    },
+  },
+
+  // ── 3. Explore Cambodia ──
+  {
+    id: 'explore-cambodia',
+    category: 'frontend',
+    featured: false,
+    timeline: 'Year 1 (SETEC)',
+    role: {
+      en: 'Web Designer & Developer',
+      km: 'អ្នករចនា & អភិវឌ្ឍន៍គេហទំព័រ',
+    },
+    title: {
+      en: 'Explore Cambodia Travel & Culture Portal',
+      km: 'គេហទំព័រទេសចរណ៍ និងវប្បធម៌ រុករកកម្ពុជា (Explore Cambodia)',
+    },
+    description: {
+      en: 'Provincial tourism web application showcasing all 25 provinces in Cambodia, highlighting local cuisine, lifestyle, travel destinations, and regional development.',
+      km: 'កម្មវិធីវែបទេសចរណ៍ដែលបង្ហាញខេត្ត-ក្រុងទាំង ២៥ នៅកម្ពុជា រួមមានម្ហូបអាហារប្រចាំតំបន់ របៀបរស់នៅ តំបន់ទេសចរណ៍ និងការអភិវឌ្ឍ។',
+    },
+    fullDescription: {
+      en: 'Built during Year 1 at SETEC Institute using HTML5, CSS3, and Bootstrap 5. This web platform takes users on a virtual journey through all 25 provinces of Cambodia. Users can explore famous tourist landmarks, authentic regional dishes, cultural traditions, and socio-economic development across each province with interactive cards and responsive image galleries.',
+      km: 'បង្កើតឡើងក្នុងអំឡុងពេលសិក្សាឆ្នាំទី ១ នៅវិទ្យាស្ថាន សេដ្ឋិក ដោយប្រើ HTML5, CSS3 និង Bootstrap 5។ គេហទំព័រនេះនាំអ្នកប្រើប្រាស់ស្វែងយល់ពីខេត្តក្រុងទាំង ២៥ នៃប្រទេសកម្ពុជា រួមមានតំបន់ទេសចរណ៍ល្បីៗ ម្ហូបអាហារប្រចាំតំបន់ វប្បធម៌ប្រពៃណី និងការអភិវឌ្ឍក្នុងតំបន់នីមួយៗ។',
+    },
+    tags: ['HTML5', 'CSS3', 'Bootstrap 5', 'Responsive Design', 'Cultural Web App'],
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+    githubUrl: 'https://github.com/chhinchhatilm2050/Product-Map',
+    liveUrl: 'https://explore-cambodia-six.vercel.app',
+    keyFeatures: {
+      en: [
+        'Interactive province explorer covering all 25 provinces across Cambodia',
+        'Dedicated sections for famous travel destinations, historical temples, and eco-tourism',
+        'Regional food and lifestyle discovery cards with rich multimedia',
+        'Mobile-friendly responsive grids built with clean semantic Bootstrap 5',
+      ],
+      km: [
+        'ការស្វែងរកព័ត៌មានលម្អិតនៃខេត្ត-ក្រុងទាំង ២៥ នៅទូទាំងប្រទេសកម្ពុជា',
+        'ផ្នែកជាក់លាក់សម្រាប់តំបន់ទេសចរណ៍ ប្រាសាទបុរាណ និងទេសចរណ៍ធម្មជាតិ',
+        'ការបង្ហាញម្ហូបអាហារឆ្ងាញ់ៗ និងរបៀបរស់នៅប្រចាំតំបន់',
+        'រចនាសម្ព័ន្ធទំព័រឆ្លើយតបលើទូរសព្ទដៃយ៉ាងរលូនជាមួយ Bootstrap 5',
+      ],
+    },
+  },
+
+  // ── 4. Online Clothing Shop UI ──
+  {
+    id: 'online-clothing-shop',
+    category: 'frontend',
+    featured: false,
+    timeline: 'Year 1 (SETEC)',
+    role: {
+      en: 'Frontend UI Developer',
+      km: 'អ្នកអភិវឌ្ឍន៍ Frontend UI',
+    },
+    title: {
+      en: 'TrendWear Online Clothing Store UI',
+      km: 'ចំណុចប្រទាក់ហាងលក់សម្លៀកបំពាក់ TrendWear Online Store',
+    },
+    description: {
+      en: 'Modern fashion e-commerce storefront UI featuring apparel product collections, interactive shopping cart drawers, and promotional hero banners.',
+      km: 'ចំណុចប្រទាក់ហាងលក់សម្លៀកបំពាក់ទំនើប ដែលបង្ហាញម៉ូដសម្លៀកបំពាក់ទាន់សម័យ កន្រ្តកទំនិញ និងផ្ទាំងផ្សព្វផ្សាយ។',
+    },
+    fullDescription: {
+      en: 'Created during Year 1 at SETEC Institute. A responsive online shopping web interface crafted with semantic HTML5, modern CSS3, and Bootstrap 5. It features structured product catalog grids, price and category filters, product detail modals, an interactive shopping cart overlay, and a clean minimalist checkout flow.',
+      km: 'បង្កើតឡើងក្នុងឆ្នាំទី ១ នៅវិទ្យាស្ថាន សេដ្ឋិក។ ជាចំណុចប្រទាក់ហាងលក់សម្លៀកបំពាក់អនឡាញដែលរចនាឡើងជាមួយ HTML5, CSS3 និង Bootstrap 5។ រួមបញ្ចូលតារាងបង្ហាញសម្លៀកបំពាក់ ការញែកតាមតម្លៃនិងទំហំ ផ្ទាំងកន្រ្តកទំនិញ និងទំព័រទូទាត់ប្រាក់។',
+    },
+    tags: ['HTML5', 'CSS3', 'Bootstrap 5', 'JavaScript', 'E-Commerce UI'],
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80',
+    githubUrl: 'https://github.com/chhinchhatilm2050/online-shop',
+    liveUrl: 'https://online-shop-steel-one.vercel.app',
+    keyFeatures: {
+      en: [
+        'Clean e-commerce product grids with hover zoom states and quick-view overlays',
+        'Category browsing: Men, Women, Accessories, and Seasonal Sales',
+        'Interactive shopping cart sidebar with dynamic subtotal calculations in JS',
+        'Polished responsive layouts designed for mobile, tablet, and desktop viewports',
+      ],
+      km: [
+        'តារាងបង្ហាញទំនិញស្អាតទាក់ទាញជាមួយចលនា hover zoom ពេលដាក់ Mouse លើ',
+        'ការរៀបចំប្រភេទសម្លៀកបំពាក់៖ បុរស នារី គ្រឿងតុបតែង និងទំនិញបញ្ចុះតម្លៃ',
+        'កន្រ្តកទំនិញ Slide-out ជាមួយការគណនាតម្លៃសរុបតាម JavaScript',
+        'ការបង្ហាញទំព័រត្រូវតាមទំហំអេក្រង់ទូរសព្ទ ថេប្លេត និងកុំព្យូទ័រ',
+      ],
+    },
+  },
+
+  // ── 5. CineVerse Movie Portal ──
+  {
+    id: 'cineverse-movies',
+    category: 'frontend',
+    featured: false,
+    timeline: 'Year 1 (SETEC)',
+    role: {
+      en: 'Frontend Web Developer',
+      km: 'អ្នកអភិវឌ្ឍន៍ Frontend',
+    },
+    title: {
+      en: 'CineVerse Movie & Cinema Streaming Portal',
+      km: 'គេហទំព័រកម្សាន្តភាពយន្ត CineVerse (Cinema & Anime)',
+    },
+    description: {
+      en: 'Entertainment web platform featuring cinema blockbusters, Hollywood hits, Anime collections, and Horror films with animated layouts.',
+      km: 'គេហទំព័រកម្សាន្តភាពយន្តដែលបង្ហាញរឿងរោងភាពយន្ត រឿងហូលីវូដ គំនូរជីវចល Anime និងរឿងភ័យរន្ធត់ ជាមួយចលនា Layout ដ៏រលូន។',
+    },
+    fullDescription: {
+      en: 'Developed in Year 1 using HTML5, modern CSS3, and custom CSS animations. CineVerse is a movie streaming discovery platform categorizing films into Cinema releases, Hollywood blockbusters, trending Anime series, and Horror films. Features dynamic movie cards, animated hover effects, trailer modals, and genre filtering.',
+      km: 'បង្កើតឡើងក្នុងឆ្នាំទី ១ ដោយប្រើ HTML5, CSS3 និងចលនា CSS Animations ដ៏រស់រវើក។ CineVerse គឺជាគេហទំព័រស្វែងរកភាពយន្តដែលបែងចែកតាមប្រភេទច្បាស់លាស់ដូចជា រឿងរោងភាពយន្ត ភាពយន្តហូលីវូដ រឿង Anime និងរឿងភ័យរន្ធត់ ជាមួយការរចនាបែបងងឹតទាក់ភ្នែក។',
+    },
+    tags: ['HTML5', 'CSS3 Animations', 'JavaScript', 'Flexbox & Grid', 'UI Layout'],
+    image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80',
+    githubUrl: 'https://github.com/chhinchhatilm2050/Movie',
+    liveUrl: 'https://chhat-movies.vercel.app',
+    keyFeatures: {
+      en: [
+        'Curated film categories: Cinema premieres, Hollywood, Anime, and Horror hits',
+        'Custom CSS hero slider and smooth transition hover effects on movie cards',
+        'Interactive trailer modal popup with embedded video playback interface',
+        'Dark cinema-inspired UI theme with crimson red accents and glowing badges',
+      ],
+      km: [
+        'ការបែងចែកប្រភេទភាពយន្តច្បាស់លាស់៖ រឿងរោង ភាពយន្តហូលីវូដ Anime និងរឿងខ្មោច/ភ័យរន្ធត់',
+        'ចលនា CSS Slider និង hover effects ដ៏ទាក់ទាញលើផ្ទាំងរូបភាពភាពយន្តនីមួយៗ',
+        'ផ្ទាំង Modal បង្ហាញវីដេអូខ្លី Trailer និងព័ត៌មានលម្អិតរបស់រឿង',
+        'ការរចនាបែបងងឹតស៊ីគ្នានឹងរោងកុន ជាមួយពណ៌ក្រហម Crimson ដ៏ទាក់ភ្នែក',
+      ],
+    },
+  },
+
+  // ── 6. Zando App & Cinema Mobile Clone (UI/UX) ──
+  {
+    id: 'zando-clone',
+    category: 'uiux',
+    featured: false,
+    timeline: 'Year 2 (MIS Design Semester)',
+    role: {
+      en: 'UI/UX Designer (Figma)',
+      km: 'អ្នករចនា UI/UX (Figma)',
+    },
+    title: {
+      en: 'Zando App Mobile UI Clone (Figma Case Study)',
+      km: 'ការរចនា Zando App & Cinema Mobile Clone (គម្រោង UI/UX)',
+    },
+    description: {
+      en: 'Academic UI/UX design case study in Figma cloning and refining mobile interfaces for the popular Zando shopping.',
+      km: 'គម្រោងសិក្សា UI/UX ក្នុងកម្មវិធី Figma ដោយ Clone និងកែលម្អចំណុចប្រទាក់កម្មវិធីទូរសព្ទ Zando Shopping ',
+    },
+    fullDescription: {
+      en: 'Created as part of the UI/UX design module in the Year 2 MIS curriculum at SETEC Institute. Built high-fidelity mobile app mockups and wireframes in Figma, analyzing user flows for Cambodia\'s leading retail app Zando and designing a sleek mobile movie ticket booking flow with interactive components and modern UI guidelines.',
+      km: 'បង្កើតឡើងជាផ្នែកមួយនៃមុខវិជ្ជា UI/UX ក្នុងកម្មវិធីសិក្សា MIS ឆ្នាំទី ២ នៅវិទ្យាស្ថាន សេដ្ឋិក។ បានរចនាផ្ទាំងគំរូ Mobile App High-fidelity និង Wireframe ក្នុង Figma ដោយវិភាគលើ User Flow នៃកម្មវិធីទិញទំនិញល្បីឈ្មោះ Zando និងការរចនាទំព័រកក់សំបុត្រកុនតាមទូរសព្ទដៃយ៉ាងទាក់ទាញ។',
+    },
+    tags: ['Figma', 'UI/UX Design', 'Wireframing', 'Mobile App UI', 'Prototyping', 'User Flow'],
+    image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80',
+    githubUrl: 'https://www.figma.com/design/7sRRYyGvoKe1a8BOyVr9Pd/Project-Zando?node-id=5-2&t=KkawpsXnPGu4RbFB-0',
+    liveUrl: 'https://www.figma.com/proto/7sRRYyGvoKe1a8BOyVr9Pd/Project-Zando?node-id=5-2&t=vuTpyCf3eFjfI0WX-1',
+    keyFeatures: {
+      en: [
+        'Comprehensive Figma design system with components, color tokens, and typography',
+        'Zando mobile commerce clone: Home feed, product cards, category navigation, and checkout',
+        'Interactive mobile prototypes showcasing micro-interactions and transitions',
+      ],
+      km: [
+        'ប្រព័ន្ធរចនា (Design System) ក្នុង Figma ជាមួយ components, color tokens និង typography',
+        'គំរូរចនា Zando App: ទំព័រដើម បញ្ជីទំនិញ ការរុករកតាមប្រភេទ និងទំព័រទូទាត់ប្រាក់',
+        'គំរូសាកល្បង Prototype អន្តរកម្មដែលបង្ហាញចលនានិងការផ្លាស់ប្តូរទំព័រ',
       ],
     },
   },
   {
-    id: 'kroma-design-system',
-    category: 'design',
+    id: 'Legend-cinema-clone',
+    category: 'uiux',
     featured: false,
+    timeline: 'Year 2 (MIS Design Semester)',
+    role: {
+      en: 'UI/UX Designer (Figma)',
+      km: 'អ្នករចនា UI/UX (Figma)',
+    },
     title: {
-      en: 'Kroma Crimson Design System',
-      km: 'ប្រព័ន្ធរចនា Kroma Crimson Design System',
+      en: 'Cinema Mobile UI Clone (Figma Case Study)',
+      km: 'ការរចនា Cinema Mobile Clone (គម្រោង UI/UX)',
     },
     description: {
-      en: 'Accessible, dark-first React & Tailwind component library with automated Figma token synchronization and storybook docs.',
-      km: 'បណ្ណាល័យសមាសធាតុ React & Tailwind ងាយស្រួលប្រើប្រាស់ គាំទ្ររបៀបងងឹត ជាមួយការធ្វើសមកាលកម្ម Figma Token និងឯកសារ Storybook។',
+      en: 'Academic UI/UX design case study in Figma cloning and refining mobile interfaces for the popular cinema ticket booking flow.',
+      km: 'គម្រោងសិក្សា UI/UX ក្នុងកម្មវិធី Figma ដោយ Clone និងកែលម្អចំណុចប្រទាក់កម្មវិធីទូរសព្ទ ប្រព័ន្ធកក់សំបុត្ររោងកុន។',
     },
     fullDescription: {
-      en: 'Kroma is an open-source design system engineered for sleek dark-themed dashboards and modern tech landing pages. It includes 45+ accessible primitives built on Radix UI, WCAG AAA compliant contrast levels, customizable CSS token presets, and full keyboard navigation support.',
-      km: 'Kroma គឺជាប្រព័ន្ធរចនា Open-source សម្រាប់ផ្ទាំង Dashboard និង Landing page បែបងងឹតទំនើប។ រួមបញ្ចូលសមាសធាតុជាង ៤៥ បង្កើតលើ Radix UI ស្របតាមស្តង់ដារ WCAG AAA និងគាំទ្រការបញ្ជាដោយ Keyboard ពេញលេញ។',
+      en: 'Created as part of the UI/UX design module in the Year 2 MIS curriculum at SETEC Institute. Built high-fidelity mobile app mockups and wireframes in Figma, analyzing user flows for Cambodia\'s leading retail app legend cinema and designing a sleek mobile movie ticket booking flow with interactive components and modern UI guidelines.',
+      km: 'បង្កើតឡើងជាផ្នែកមួយនៃមុខវិជ្ជា UI/UX ក្នុងកម្មវិធីសិក្សា MIS ឆ្នាំទី ២ នៅវិទ្យាស្ថាន សេដ្ឋិក។ បានរចនាផ្ទាំងគំរូ Mobile App High-fidelity និង Wireframe ក្នុង Figma ដោយវិភាគលើ User Flow នៃកម្មវិធីកក់សំបុត្រកុនល្បីឈ្មោះ Legend Cinema និងការរចនាទំព័រកក់សំបុត្រកុនតាមទូរសព្ទដៃយ៉ាងទាក់ទាញ។',
     },
-    tags: ['Design System', 'React', 'Radix UI', 'Tailwind CSS', 'Storybook', 'Figma'],
-    image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80',
-    githubUrl: 'https://github.com/chhin-chhat/kroma-design-system',
-    liveUrl: 'https://kroma-ui.vercel.app',
-    timeline: '2023',
-    role: {
-      en: 'UI/UX Engineer & Author',
-      km: 'វិស្វករ UI/UX & អ្នកបង្កើត',
-    },
+    tags: ['Figma', 'UI/UX Design', 'Wireframing', 'Mobile App UI', 'Prototyping', 'User Flow'],
+    image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80',
+    githubUrl: 'https://www.figma.com/design/AZHfvqKF9Ut4yirbSj1QUB/chhinchhat?node-id=0-1&t=KFMqXMinVzQufivm-1',
+    liveUrl: 'https://www.figma.com/proto/AZHfvqKF9Ut4yirbSj1QUB/chhinchhat?node-id=0-1&t=xqIPFYtCs9W7MR71-1',
     keyFeatures: {
       en: [
-        '45+ accessible and tested UI components compliant with WCAG AAA standards',
-        'Automated design token extraction from Figma variables via GitHub Actions',
-        'Interactive Storybook documentation with live live code editing',
-        'Zero runtime CSS overhead built natively with Tailwind CSS',
+        'Comprehensive Figma design system with components, color tokens, and typography',
+        'Cinema booking mobile flow: Seat selection layout, showtimes, and booking confirmation',
+        'Interactive mobile prototypes showcasing micro-interactions and transitions',
       ],
       km: [
-        'សមាសធាតុ UI ជាង ៤៥ ដែលបានធ្វើតេស្តត្រឹមត្រូវតាមស្តង់ដារ WCAG AAA',
-        'ការទាញយក Design Tokens ដោយស្វ័យប្រវត្តិពី Figma តាម GitHub Actions',
-        'ឯកសារ Storybook អន្តរកម្មជាមួយការសាកល្បងកែប្រែកូដផ្ទាល់',
-        'គ្មានបន្ទុក Runtime CSS ដោយបង្កើតឡើងលើ Tailwind CSS សុទ្ធ',
+        'ប្រព័ន្ធរចនា (Design System) ក្នុង Figma ជាមួយ components, color tokens និង typography',
+        'លំហូររចនាកក់សំបុត្រកុន៖ ការជ្រើសរើសកៅអី ម៉ោងបញ្ចាំង និងការបញ្ជាក់ការកក់',
+        'គំរូសាកល្បង Prototype អន្តរកម្មដែលបង្ហាញចលនានិងការផ្លាស់ប្តូរទំព័រ',
       ],
     },
   },
 ]
-

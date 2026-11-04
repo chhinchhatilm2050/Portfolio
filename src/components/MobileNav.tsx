@@ -94,7 +94,7 @@ export default function MobileNav({
             animate="visible"
             exit="hidden"
             onClick={onClose}
-            className="fixed inset-0 z-40 bg-black/75 backdrop-blur-md md:hidden"
+            className="fixed inset-0 z-40 cursor-pointer bg-black/75 backdrop-blur-md md:hidden"
             aria-hidden="true"
           />
 
@@ -109,7 +109,7 @@ export default function MobileNav({
             aria-modal="true"
             aria-label="Mobile Navigation Menu"
             className="fixed top-0 right-0 bottom-0 z-50 w-full max-w-xs bg-dark-bg/95 backdrop-blur-xl
-                       border-l border-red-500/20 shadow-2xl flex flex-col pt-20 pb-8 px-6 md:hidden"
+                       border-l border-red-500/20 shadow-2xl flex flex-col pt-5 pb-8 px-6 md:hidden"
           >
             {/* Header / Brand label in drawer with Close button */}
             <div className="flex items-center justify-between pb-6 border-b border-border/80">
@@ -128,7 +128,7 @@ export default function MobileNav({
                 type="button"
                 onClick={onClose}
                 aria-label="Close navigation menu"
-                className="w-9 h-9 rounded-xl bg-surface/80 border border-border hover:border-red-500/40 text-text-muted hover:text-white flex items-center justify-center transition-all hover:bg-red-500/10 active:scale-95"
+                className="w-9 h-9 cursor-pointer rounded-xl bg-surface/80 border border-border hover:border-red-500/40 text-text-muted hover:text-white flex items-center justify-center transition-all hover:bg-red-500/10 active:scale-95"
               >
                 <X size={18} />
               </button>
@@ -198,7 +198,7 @@ export default function MobileNav({
                     onClick={() => {
                       if (currentLang !== 'EN') onToggleLang()
                     }}
-                    className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${
+                    className={`cursor-pointer px-3 py-1 rounded-lg text-xs font-bold transition-all ${
                       currentLang === 'EN'
                         ? 'bg-red-500 text-white shadow-sm shadow-red-500/30'
                         : 'text-text-muted hover:text-white'
@@ -211,7 +211,7 @@ export default function MobileNav({
                     onClick={() => {
                       if (currentLang !== 'KM') onToggleLang()
                     }}
-                    className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${
+                    className={`cursor-pointer px-3 py-1 rounded-lg text-xs font-bold transition-all ${
                       currentLang === 'KM'
                         ? 'bg-red-500 text-white shadow-sm shadow-red-500/30'
                         : 'text-text-muted hover:text-white font-khmer'
@@ -226,7 +226,7 @@ export default function MobileNav({
               <button
                 type="button"
                 onClick={onToggleTheme}
-                className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-surface border border-border
+                className="w-full cursor-pointer flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-surface border border-border
                            text-xs font-medium text-text-muted hover:text-white hover:border-red-500/30 transition-all"
               >
                 <span className="flex items-center gap-2">

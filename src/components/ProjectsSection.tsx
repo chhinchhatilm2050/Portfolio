@@ -15,9 +15,8 @@ export default function ProjectsSection() {
   const filterTabs: { key: ProjectCategory; label: string }[] = [
     { key: 'all',       label: t('projects.filter_all') },
     { key: 'fullstack', label: t('projects.filter_fullstack') },
-    { key: 'mobile',    label: t('projects.filter_mobile') },
-    { key: 'web3',      label: t('projects.filter_web3') },
-    { key: 'design',    label: t('projects.filter_design') },
+    { key: 'frontend',  label: t('projects.filter_frontend') },
+    { key: 'uiux',      label: t('projects.filter_uiux') },
   ]
 
   const filteredProjects =
@@ -28,13 +27,13 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="relative py-24 px-6 sm:px-10 lg:px-12 w-full bg-dark-bg border-t border-zinc-800/60 overflow-hidden"
+      className="relative py-24 w-full bg-dark-bg border-t border-zinc-800/60 overflow-hidden"
     >
       {/* Ambient Crimson Glows in Background */}
       <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-red-600/5 rounded-full blur-[170px] pointer-events-none -z-10" />
       <div className="absolute bottom-1/4 right-1/4 w-[450px] h-[450px] bg-red-500/5 rounded-full blur-[160px] pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto w-full">
+      <div className="max-w-7xl mx-auto w-full px-6 sm:px-10 lg:px-12">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,7 +42,7 @@ export default function ProjectsSection() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-xs font-semibold text-red-400 mb-4 shadow-sm shadow-red-500/10">
+          <div className="inline-flex animate-bounce items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-xs font-semibold text-red-400 mb-4 shadow-sm shadow-red-500/10">
             <FolderGit2 size={13} className="text-red-500" />
             {t('projects.title')}
           </div>
@@ -54,7 +53,7 @@ export default function ProjectsSection() {
 
         {/* Category Filter Bar */}
         <div className="flex justify-center mb-14">
-          <div className="inline-flex flex-wrap items-center justify-center gap-1.5 p-1.5 rounded-full bg-zinc-950/80 border border-zinc-800/80 backdrop-blur-md">
+          <div className="inline-flex items-center gap-1.5 p-1.5 rounded-full bg-zinc-950/80 border border-zinc-800/80 backdrop-blur-md">
             {filterTabs.map((tab) => {
               const isSelected = selectedCategory === tab.key
 
@@ -63,7 +62,7 @@ export default function ProjectsSection() {
                   key={tab.key}
                   type="button"
                   onClick={() => setSelectedCategory(tab.key)}
-                  className={`relative px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-200 cursor-pointer ${
+                  className={`cursor-pointer relative px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-200 ${
                     isSelected ? 'text-white' : 'text-zinc-400 hover:text-white'
                   }`}
                 >
@@ -71,7 +70,7 @@ export default function ProjectsSection() {
                   {isSelected && (
                     <motion.div
                       layoutId="active-project-pill"
-                      className="absolute inset-0 rounded-full bg-red-500 shadow-[0_0_18px_rgba(239,68,68,0.4)]"
+                      className="absolute inset-0 animate-pulse rounded-full bg-red-500 shadow-[0_0_18px_rgba(239,68,68,0.4)]"
                       transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                     />
                   )}

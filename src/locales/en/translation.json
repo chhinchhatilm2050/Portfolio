@@ -3,7 +3,7 @@
     "home":       "Home",
     "about":      "About",
     "skills":     "Skills",
-    "experience": "Experience",
+    "education":  "Education",
     "projects":   "Projects",
     "contact":    "Contact"
   },
@@ -12,38 +12,38 @@
     "name":        "Chhin Chhat",
     "role":        "Full Stack Developer",
     "roles": [
-      "Full Stack Developer",
-      "UI/UX Enthusiast",
-      "React & TypeScript Specialist",
-      "Frontend Architect"
+      "Aspiring Full Stack Developer",
+      "Year 2 MIS Student (SETEC)",
+      "Vue.js & Node.js Developer",
+      "Frontend & Backend Explorer"
     ],
-    "tagline":     "Crafting high-performance, modern web applications with pixel-perfect design and clean code.",
+    "tagline":     "Year 2 Semester 2 MIS student at SETEC Institute. Passionate about building modern, scalable web apps and striving to become a professional Full Stack Developer.",
     "cta_projects": "View Projects",
     "cta_contact":  "Contact Me",
     "cta_resume":   "Download CV",
-    "available":    "Available for freelance & full-time"
+    "available":    "Available for internships & projects"
   },
   "about": {
     "title":       "About Me",
-    "subtitle":    "Turning ambitious ideas into scalable reality",
-    "description": "I'm a Full Stack Developer specializing in crafting robust web architectures and responsive, accessible interfaces. With a strong eye for UI/UX details and a commitment to clean code, I build digital experiences that deliver real impact.",
+    "subtitle":    "Aspiring Full Stack Developer & Year 2 MIS Student",
+    "description": "I am a Year 2, Semester 2 student majoring in Management Information Systems (MIS) at SETEC Institute, where I also studied UI/UX design fundamentals for a semester as part of my curriculum. With practical technical training from Simpaz Center and an intensive Full Stack Web Development bootcamp at TFD, my primary ambition is to become a skilled Full Stack Developer. I build modern web applications using Vue, React, and Angular on the frontend, supported by reliable backend architectures using Node.js, Express, MongoDB, and modern DevOps tools.",
     "stats": {
-      "exp_val": "3+",
-      "exp_lbl": "Years Experience",
-      "proj_val": "25+",
+      "exp_val": "Year 2",
+      "exp_lbl": "Semester 2 (SETEC)",
+      "proj_val": "4+",
       "proj_lbl": "Completed Projects",
       "sat_val": "100%",
-      "sat_lbl": "Client Satisfaction"
+      "sat_lbl": "Dedication & Growth"
     },
     "competencies_title": "Core Competencies",
-    "comp_frontend": "Frontend Architecture",
-    "comp_frontend_desc": "React, TypeScript, Next.js, and Tailwind CSS with modular components.",
-    "comp_backend": "Backend & API Engineering",
-    "comp_backend_desc": "Node.js, Express, RESTful APIs, database design, and authentication.",
-    "comp_uiux": "Interactive UI/UX",
-    "comp_uiux_desc": "Declarative Framer Motion animations and responsive, mobile-first design.",
-    "comp_perf": "Performance & Security",
-    "comp_perf_desc": "Fast load speeds, accessible layouts (a11y), and clean architecture."
+    "comp_frontend": "Frontend Development",
+    "comp_frontend_desc": "Building responsive, modern UIs with Vue.js, Tailwind CSS, Angular, React, and TypeScript.",
+    "comp_backend": "Backend & API Development",
+    "comp_backend_desc": "Architecting RESTful APIs with Node.js, Express, MongoDB & Mongoose, MySQL, and JWT authentication.",
+    "comp_uiux": "UI/UX & Product Design",
+    "comp_uiux_desc": "Designing clean prototypes, wireframes, and user flows in Figma learned through my MIS UI/UX course.",
+    "comp_perf": "DevOps & Engineering Practices",
+    "comp_perf_desc": "Docker containerization, Postman API testing, Git & GitHub workflows, and CI/CD pipelines."
   },
   "skills": {
     "title":       "Skills & Technologies",
@@ -56,49 +56,41 @@
     "level_adv":   "Advanced",
     "level_prof":  "Proficient"
   },
-  "experience": {
-    "title":       "Experience & Journey",
-    "subtitle":    "My professional career path and milestones",
+  "education": {
+    "title":       "Education & Training",
+    "subtitle":    "My academic background, professional bootcamps, and technical training",
     "present":     "Present",
     "roles": [
       {
         "period": "2024 - Present",
-        "title": "Senior Full Stack Developer",
-        "company": "Tech Innovations Studio",
-        "desc": "Leading architecture of enterprise-scale React and Node.js web applications, managing microservices, and mentoring junior engineers.",
-        "skills": ["React 19", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "Docker"]
+        "title": "Bachelor of Management Information Systems (MIS)",
+        "company": "SETEC Institute",
+        "desc": "Studying Management Information Systems (MIS), covering system analysis, software engineering, database architecture, enterprise IT systems, and a semester of UI/UX design.",
+        "skills": ["MIS", "Software Engineering", "System Analysis", "Database Systems", "UI/UX Fundamentals", "Figma"]
       },
       {
-        "period": "2022 - 2024",
-        "title": "Frontend Software Engineer",
-        "company": "Digital Solutions Corp",
-        "desc": "Built high-performance, accessible, and responsive user interfaces using React, Tailwind CSS, and Framer Motion with state-of-the-art UX.",
-        "skills": ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "REST APIs"]
+        "period": "3 Months",
+        "title": "Full Stack Web Developer Bootcamp",
+        "company": "TFD Bootcamp",
+        "desc": "Completed intensive 4-month full stack web development training focused on building scalable web with Vue, Express, Node.js, MongoDB, Docker containerization, CI/CD, RESTful APIs, and industry best practices.",
+        "skills": ["Vue.js", "Tailwind CSS", "HTML5/CSS3", "Express.js", "Node.js", "MongoDB", "Docker", "CI/CD", "RESTful API", "Best Practices"]
       },
       {
-        "period": "2021 - 2022",
-        "title": "Junior Web Developer",
-        "company": "Creative Web Agency",
-        "desc": "Developed interactive client websites, optimized frontend performance, collaborated on UI redesigns, and integrated headless CMS APIs.",
-        "skills": ["JavaScript", "React", "HTML5/CSS3", "Git", "Figma"]
-      },
-      {
-        "period": "2018 - 2022",
-        "title": "B.S. in Computer Science",
-        "company": "National University of Management",
-        "desc": "Graduated with honors. Focused on Software Engineering, Data Structures, Algorithms, Distributed Systems, and Database Management.",
-        "skills": ["Computer Science", "Software Engineering", "Algorithms", "Databases"]
+        "period": "6 Months",
+        "title": "Frontend Web Development & Team Collaboration",
+        "company": "Simpaz Center",
+        "desc": "Completed 6-month hands-on frontend web development training focused on effective teamwork and building responsive user interfaces using HTML, CSS, Bootstrap, JavaScript, TypeScript, and Angular.",
+        "skills": ["Teamwork", "HTML5", "CSS3", "Bootstrap", "JavaScript", "TypeScript", "Angular"]
       }
     ]
   },
   "projects": {
     "title":           "Featured Projects",
     "subtitle":        "A showcase of modern web apps, mobile solutions, and open-source systems",
-    "filter_all":      "All",
+    "filter_all":      "All Projects",
     "filter_fullstack":"Full Stack",
-    "filter_mobile":   "Mobile",
-    "filter_web3":     "Web3 / Crypto",
-    "filter_design":   "Design Systems",
+    "filter_frontend": "Frontend & Web",
+    "filter_uiux":     "UI/UX Design",
     "live_demo":       "Live Demo",
     "source_code":     "Source Code",
     "view_detail":     "View Details",
@@ -110,16 +102,22 @@
     "close_modal":     "Close modal"
   },
   "contact": {
-    "title":       "Get In Touch",
-    "subtitle":    "Have a project in mind? Let's talk!",
-    "name":        "Your Name",
-    "email":       "Your Email",
-    "subject":     "Subject",
-    "message":     "Your Message",
-    "send":        "Send Message",
-    "sending":     "Sending...",
-    "success":     "Message sent successfully! I'll get back to you soon.",
-    "error":       "Something went wrong. Please try again."
+    "title":         "Contact Me",
+    "get_in_touch":  "Get In Touch",
+    "desc":          "Have a project in mind or just want to say hello? Fill out the form below and I'll get back to you within 24 hours.",
+    "info_call":     "Call Me",
+    "info_email":    "E-mail",
+    "info_location": "Location",
+    "name":          "Name",
+    "email":         "Email",
+    "subject":       "Subject",
+    "message":       "Message",
+    "send":          "Send Message",
+    "sending":       "Sending...",
+    "success":       "Message sent successfully! I'll get back to you soon.",
+    "error":         "Something went wrong. Please try again.",
+    "follow":        "Follow Me",
+    "available":     "Available for freelance & full-time opportunities"
   },
   "footer": {
     "rights": "All rights reserved."

@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { key: 'nav.home',       href: '#home' },
   { key: 'nav.about',      href: '#about' },
   { key: 'nav.skills',     href: '#skills' },
-  { key: 'nav.experience', href: '#experience' },
+  { key: 'nav.education',  href: '#education' },
   { key: 'nav.projects',   href: '#projects' },
   { key: 'nav.contact',    href: '#contact' },
 ]
@@ -136,7 +136,7 @@ export default function Navbar() {
                   {isActive && (
                     <motion.div
                       layoutId="active-pill"
-                      className="absolute inset-0 rounded-full bg-red-500 shadow-[0_0_15px_rgba(239,68,68,0.45)] -z-0"
+                      className="absolute animate-pulse inset-0 rounded-full bg-red-500 shadow-[0_0_15px_rgba(239,68,68,0.45)] -z-0"
                       transition={{
                         type: 'spring',
                         stiffness: 400,
@@ -171,7 +171,7 @@ export default function Navbar() {
                 onClick={() => {
                   if (currentLang !== 'EN') toggleLang()
                 }}
-                className={`flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold transition-all ${
+                className={`flex items-center gap-1 px-3 cursor-pointer py-1 rounded-full text-xs font-bold transition-all ${
                   currentLang === 'EN'
                     ? 'bg-red-500 text-white shadow-[0_0_10px_rgba(239,68,68,0.4)]'
                     : 'text-zinc-400 hover:text-white'
@@ -186,7 +186,7 @@ export default function Navbar() {
                 onClick={() => {
                   if (currentLang !== 'KM') toggleLang()
                 }}
-                className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold transition-all ${
+                className={`flex items-center gap-1 px-2.5 py-1 cursor-pointer rounded-full text-xs font-bold transition-all ${
                   currentLang === 'KM'
                     ? 'bg-red-500 text-white shadow-[0_0_10px_rgba(239,68,68,0.4)]'
                     : 'text-zinc-400 hover:text-white font-khmer'
@@ -204,13 +204,13 @@ export default function Navbar() {
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.05 }}
               aria-label={theme === 'dark' ? t('theme.light') : t('theme.dark')}
-              className="w-9 h-9 rounded-full bg-zinc-950/80 hover:bg-zinc-900 border border-zinc-800/80 hover:border-zinc-700
+              className="w-9 cursor-pointer h-9 rounded-full bg-zinc-950/80 hover:bg-zinc-900 border border-zinc-800/80 hover:border-zinc-700
                          flex items-center justify-center text-amber-400 hover:text-amber-300 transition-all shadow-sm"
             >
               {theme === 'dark' ? (
-                <Sun size={15} className="text-amber-400" />
+                <Sun size={15} className="text-amber-400 animate-spin" />
               ) : (
-                <Moon size={15} className="text-red-400" />
+                <Moon size={15} className="text-red-400 animate-none" />
               )}
             </motion.button>
 
@@ -220,7 +220,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen((prev) => !prev)}
               aria-label={mobileOpen ? 'Close Menu' : 'Open Menu'}
               aria-expanded={mobileOpen}
-              className="md:hidden relative w-10 h-10 flex flex-col items-center justify-center rounded-xl bg-zinc-950/80 border border-zinc-800 text-white transition-colors focus:outline-none"
+              className="md:hidden cursor-pointer relative w-10 h-10 flex flex-col items-center justify-center rounded-xl bg-zinc-950/80 border border-zinc-800 text-white transition-colors focus:outline-none"
             >
               <span className="sr-only">Toggle navigation menu</span>
               <div className="w-5 h-4 relative flex flex-col justify-between">

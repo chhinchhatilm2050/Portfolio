@@ -137,7 +137,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
           </button>
 
           <span className="text-[11px] font-mono text-zinc-500 uppercase tracking-wider">
-            {project.category}
+            {project.category === 'fullstack' ? 'Full Stack' : project.category === 'uiux' ? 'UI/UX' : 'Frontend'}
           </span>
         </div>
       </div>

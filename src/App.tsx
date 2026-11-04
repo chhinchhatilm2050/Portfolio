@@ -1,14 +1,12 @@
-import { useTranslation } from 'react-i18next'
 import Layout from './components/Layout'
 import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
 import SkillsSection from './components/SkillsSection'
-import ExperienceSection from './components/ExperienceSection'
+import EducationSection from './components/EducationSection'
 import ProjectsSection from './components/ProjectsSection'
+import ContactSection from './components/ContactSection'
 
 function App() {
-  const { t } = useTranslation()
-
   return (
     <Layout>
       {/* Day 3: Hero Section */}
@@ -20,19 +18,14 @@ function App() {
       {/* Day 4: Interactive Skills Grid */}
       <SkillsSection />
 
-      {/* Day 4: Vertical Experience Timeline */}
-      <ExperienceSection />
+      {/* Day 4: Vertical Education Timeline */}
+      <EducationSection />
 
       {/* Day 5: Project Showcase & Detail Modal */}
       <ProjectsSection />
 
-      {/* ── Remaining Milestone Section (Day 6) ── */}
-      <section
-        id="contact"
-        className="min-h-screen flex items-center justify-center"
-      >
-        <h2 className="text-3xl font-bold text-white/50">{t('contact.title')} (Day 6)</h2>
-      </section>
+      {/* Day 6: Contact Form & Validation */}
+      <ContactSection />
     </Layout>
   )
 }

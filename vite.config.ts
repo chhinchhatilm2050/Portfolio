@@ -8,4 +8,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    allowedHosts: [
+      'avert-denial-cartload.ngrok-free.dev'
+    ]
+  }
 })

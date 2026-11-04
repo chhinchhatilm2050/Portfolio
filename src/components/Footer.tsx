@@ -57,7 +57,7 @@ export default function Footer() {
 
         {/* Branding */}
         <div className="flex flex-col items-center md:items-start gap-1">
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-red-600 via-rose-500 to-red-400 p-[1px] shadow-sm shadow-red-500/30">
               <div className="w-full h-full bg-dark-bg rounded-[7px] flex items-center justify-center">
                 <span className="font-extrabold text-xs tracking-tight bg-gradient-to-r from-red-400 to-rose-300 bg-clip-text text-transparent">
@@ -66,7 +66,7 @@ export default function Footer() {
               </div>
             </div>
             <span className="text-base font-bold text-white">Chhin Chhat</span>
-          </div>
+          </div> */}
           <p className="text-xs text-text-faint">
             © {year} — {t('footer.rights')} Chhin Chhat
           </p>
@@ -91,7 +91,7 @@ export default function Footer() {
 
         {/* Made with love */}
         <p className="text-xs text-text-faint flex items-center gap-1">
-          <Heart size={12} className="text-primary fill-primary" /> Don't think it impossible if you haven't tried it yet
+          Don't think it impossible if you haven't tried it yet
         </p>
       </div>
     </footer>
