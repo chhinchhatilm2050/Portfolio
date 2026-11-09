@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
-import { Mail } from 'lucide-react'
+import { Mail, FileText } from 'lucide-react'
+import { useCvModal } from '../context/CvModalContext'
 
 // Custom SVG brand icons (Lucide does not include third-party brand logos)
 function GithubIcon({ size = 16, className = '' }: { size?: number; className?: string }) {
@@ -44,11 +45,12 @@ function LinkedinIcon({ size = 16, className = '' }: { size?: number; className?
 const SOCIAL_LINKS = [
   { icon: GithubIcon,   href: 'https://github.com/chhinchhatilm2050',    label: 'GitHub' },
   { icon: LinkedinIcon, href: 'https://www.linkedin.com/in/chhin-chhat-7202bb407',  label: 'LinkedIn' },
-  { icon: Mail,         href: 'mailto:hello@example.com', label: 'Email' },
+  { icon: Mail,         href: 'mailto:chhinchhat.ilm2050@gmail.com', label: 'Email' },
 ]
 
 export default function Footer() {
   const { t } = useTranslation()
+  const { openCvModal } = useCvModal()
   const year = new Date().getFullYear()
 
   return (
@@ -57,19 +59,17 @@ export default function Footer() {
 
         {/* Branding */}
         <div className="flex flex-col items-center md:items-start gap-1">
-          {/* <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-red-600 via-rose-500 to-red-400 p-[1px] shadow-sm shadow-red-500/30">
-              <div className="w-full h-full bg-dark-bg rounded-[7px] flex items-center justify-center">
-                <span className="font-extrabold text-xs tracking-tight bg-gradient-to-r from-red-400 to-rose-300 bg-clip-text text-transparent">
-                  CC
-                </span>
-              </div>
-            </div>
-            <span className="text-base font-bold text-white">Chhin Chhat</span>
-          </div> */}
           <p className="text-xs text-text-faint">
             © {year} — {t('footer.rights')} Chhin Chhat
           </p>
+          <button
+            type="button"
+            onClick={openCvModal}
+            className="inline-flex items-center gap-1.5 text-xs text-red-500 hover:text-red-400 font-medium transition-colors cursor-pointer mt-0.5"
+          >
+            <FileText size={13} />
+            <span>{t('cv.view_cv', 'View CV')} • {t('cv.download_cv', 'Download CV')}</span>
+          </button>
         </div>
 
         {/* Social links */}

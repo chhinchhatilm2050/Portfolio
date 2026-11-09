@@ -1,8 +1,9 @@
-import { memo } from 'react'
-import { motion, useReducedMotion } from 'framer-motion'
+import { memo, useState, useRef, useEffect } from 'react'
+import { motion, useReducedMotion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { ArrowRight, Mail } from 'lucide-react'
+import { ArrowRight, Mail, FileText, Download, ChevronDown } from 'lucide-react'
 import { useTypingAnimation } from '../hooks/useTypingAnimation'
+import { useCvModal } from '../context/CvModalContext'
 import heroImg from '../assets/chinchhat.png'
 
 // SVG Brand Icons for the social row
@@ -224,11 +225,24 @@ const VideoBackground = memo(function VideoBackground() {
 
 export default function HeroSection() {
   const { t } = useTranslation()
+  const { openCvModal, downloadPdf, downloadPng } = useCvModal()
+  const [downloadMenuOpen, setDownloadMenuOpen] = useState(false)
+  const downloadRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (downloadRef.current && !downloadRef.current.contains(e.target as Node)) {
+        setDownloadMenuOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   const words = [
+    'Web Developer',
     'Aspiring Full Stack Dev',
-    'Year 2, Semester 2',
-    'MIS Major (SETEC)',
+    'MIS Student (GPA 3.95)',
     'Vue.js & Node.js Developer',
   ]
 
@@ -242,14 +256,14 @@ export default function HeroSection() {
     { icon: GithubIcon,   href: 'https://github.com/chhinchhatilm2050',       label: 'GitHub' },
     { icon: LinkedinIcon, href: 'https://www.linkedin.com/in/chhin-chhat-7202bb407',     label: 'LinkedIn' },
     { icon: TwitterIcon,  href: 'https://twitter.com',      label: 'X (Twitter)' },
-    { icon: Mail,         href: 'mailto:[chhinchhat.ilm2050@gmail.com]', label: 'Email' },
+    { icon: Mail,         href: 'mailto:chhinchhat.ilm2050@gmail.com', label: 'Email' },
   ]
 
   const stats = [
-    { val: 'Year', lbl: '2 Semester 2 at SETEC' },
-    { val: '4+',    lbl: 'Projects Completed' },
-    { val: '15+',    lbl: 'Technologies' },
-    { val: '100%',   lbl: 'Passion & Growth' },
+    { val: '3.95',   lbl: 'GPA (SETEC MIS)' },
+    { val: 'Year 2', lbl: 'Semester 2' },
+    { val: '5+',     lbl: 'Projects Built' },
+    { val: '100%',   lbl: 'Commitment & Growth' },
   ]
 
   return (
@@ -361,7 +375,7 @@ export default function HeroSection() {
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4">
             <motion.a
               href="#projects"
               whileHover={{ scale: 1.02 }}
@@ -376,11 +390,83 @@ export default function HeroSection() {
               href="#contact"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex animate-pulse items-center gap-2 px-6 py-3 rounded-xl bg-zinc-900/80 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-white font-semibold text-sm shadow-md shadow-black/40 hover:shadow-[0_0_20px_rgba(239,68,68,0.2)] transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-zinc-900/80 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-white font-semibold text-sm shadow-md shadow-black/40 hover:shadow-[0_0_20px_rgba(239,68,68,0.2)] transition-all"
             >
               <Mail size={16} className="text-zinc-400" />
               <span>{t('hero.cta_contact', 'Contact Me')}</span>
             </motion.a>
+
+            {/* CV Actions: View CV Modal + Format Selection Download */}
+            <div className="relative inline-flex items-center rounded-xl bg-red-500/10 border border-red-500/30 shadow-[0_0_20px_rgba(239,68,68,0.15)] hover:border-red-500/50 transition-all">
+              <motion.button
+                type="button"
+                onClick={openCvModal}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="inline-flex items-center gap-2 px-4 sm:px-5 py-3 text-red-400 hover:text-red-300 font-semibold text-sm transition-colors cursor-pointer"
+                title="Open and preview CV in full detail"
+              >
+                <FileText size={16} className="text-red-500" />
+                <span>{t('cv.view_cv', 'View CV')}</span>
+              </motion.button>
+              <span className="w-px h-6 bg-red-500/30" />
+              <div ref={downloadRef} className="relative">
+                <motion.button
+                  type="button"
+                  onClick={() => setDownloadMenuOpen((prev) => !prev)}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="p-3 text-red-400 hover:text-red-300 hover:bg-red-500/15 rounded-r-xl transition-colors cursor-pointer flex items-center gap-1"
+                  title="Download CV (Choose PDF or PNG)"
+                  aria-label="Download CV Options"
+                  aria-expanded={downloadMenuOpen}
+                >
+                  <Download size={16} />
+                  <ChevronDown size={13} className={`transition-transform duration-200 ${downloadMenuOpen ? 'rotate-180' : ''}`} />
+                </motion.button>
+
+                <AnimatePresence>
+                  {downloadMenuOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 8, scale: 0.95 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute right-0 top-full mt-2 w-52 p-1.5 rounded-xl bg-zinc-900 border border-zinc-700 shadow-[0_20px_50px_rgba(0,0,0,0.95)] z-50 flex flex-col gap-1 backdrop-blur-2xl"
+                    >
+                      <button
+                        type="button"
+                        onClick={() => {
+                          downloadPdf()
+                          setDownloadMenuOpen(false)
+                        }}
+                        className="w-full flex items-center justify-between px-3 py-2 rounded-lg text-left text-xs font-semibold text-white hover:bg-red-500/10 hover:text-red-400 transition-all cursor-pointer group"
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="w-6 h-6 rounded bg-red-500/20 text-red-400 flex items-center justify-center font-bold text-[10px]">PDF</span>
+                          <span>Download PDF</span>
+                        </div>
+                        <Download size={13} className="text-zinc-500 group-hover:text-red-400" />
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          downloadPng()
+                          setDownloadMenuOpen(false)
+                        }}
+                        className="w-full flex items-center justify-between px-3 py-2 rounded-lg text-left text-xs font-semibold text-white hover:bg-red-500/10 hover:text-red-400 transition-all cursor-pointer group"
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="w-6 h-6 rounded bg-zinc-800 text-zinc-300 flex items-center justify-center font-bold text-[10px]">PNG</span>
+                          <span>Download Image</span>
+                        </div>
+                        <Download size={13} className="text-zinc-500 group-hover:text-red-400" />
+                      </button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            </div>
           </div>
         </motion.div>
 

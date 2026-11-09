@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { Code2, Server, Palette, Zap, CheckCircle2 } from 'lucide-react'
+import { Code2, Server, Palette, Zap, CheckCircle2, FileText, Download } from 'lucide-react'
+import { useCvModal } from '../context/CvModalContext'
 
 export default function AboutSection() {
   const { t } = useTranslation()
+  const { openCvModal, downloadCv } = useCvModal()
 
   const stats = [
     { value: t('about.stats.exp_val'), label: t('about.stats.exp_lbl') },
@@ -82,19 +84,41 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <div className="pt-6 border-t border-border/60 flex flex-wrap gap-4 text-xs font-medium text-text-muted">
-              <span className="flex items-center gap-1.5 text-white">
-                <CheckCircle2 size={16} className="text-red-500" />
-                SETEC Year 2 Semester 2
-              </span>
-              <span className="flex items-center gap-1.5 text-white">
-                <CheckCircle2 size={16} className="text-red-500" />
-                Aspiring Full Stack Developer
-              </span>
-              <span className="flex items-center gap-1.5 text-white">
-                <CheckCircle2 size={16} className="text-red-500" />
-                MIS Major & System Analysis
-              </span>
+            <div className="pt-6 border-t border-border/60 flex flex-wrap items-center justify-between gap-4">
+              <div className="flex flex-wrap gap-4 text-xs font-medium text-text-muted">
+                <span className="flex items-center gap-1.5 text-white">
+                  <CheckCircle2 size={16} className="text-red-500" />
+                  SETEC Year 2 (GPA 3.95/4.0)
+                </span>
+                <span className="flex items-center gap-1.5 text-white">
+                  <CheckCircle2 size={16} className="text-red-500" />
+                  BACII Grade B
+                </span>
+                <span className="flex items-center gap-1.5 text-white">
+                  <CheckCircle2 size={16} className="text-red-500" />
+                  MIS Major & Web Developer
+                </span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={openCvModal}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-red-500/10 hover:bg-red-500/20 border border-red-500/30 text-red-400 hover:text-red-300 text-xs font-bold transition-all shadow-sm shadow-red-500/10 cursor-pointer"
+                >
+                  <FileText size={14} className="text-red-500" />
+                  <span>{t('cv.view_cv', 'View CV')}</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => downloadCv('pdf')}
+                  className="p-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-400 hover:text-white transition-all cursor-pointer"
+                  title={t('cv.download_cv', 'Download CV')}
+                  aria-label="Download CV"
+                >
+                  <Download size={14} />
+                </button>
+              </div>
             </div>
           </motion.div>
 

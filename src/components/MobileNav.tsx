@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
 import { motion, AnimatePresence, type Variants } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { Sun, Moon, Globe, ArrowRight, X } from 'lucide-react'
+import { Sun, Moon, Globe, ArrowRight, X, FileText, Download } from 'lucide-react'
+import { useCvModal } from '../context/CvModalContext'
 
 interface MobileNavProps {
   isOpen: boolean
@@ -70,6 +71,7 @@ export default function MobileNav({
   onToggleTheme,
 }: MobileNavProps) {
   const { t } = useTranslation()
+  const { openCvModal, downloadCv } = useCvModal()
 
   // Scroll lock on body element when drawer is open
   useEffect(() => {
@@ -184,8 +186,34 @@ export default function MobileNav({
               </ul>
             </motion.nav>
 
-            {/* Bottom Controls: Language & Theme Switcher */}
-            <div className="pt-6 border-t border-border/80 flex flex-col gap-3">
+            {/* Bottom Controls: CV Action, Language & Theme Switcher */}
+            <div className="pt-5 border-t border-border/80 flex flex-col gap-3">
+              {/* Mobile CV Button */}
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    onClose()
+                    openCvModal()
+                  }}
+                  className="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-red-500/15 hover:bg-red-500/25 border border-red-500/30 text-red-400 font-semibold text-xs tracking-wide transition-all shadow-sm shadow-red-500/10 cursor-pointer"
+                >
+                  <FileText size={15} className="text-red-500" />
+                  <span>{t('cv.view_cv', 'View CV')}</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    downloadCv()
+                  }}
+                  className="p-2.5 rounded-xl bg-surface border border-border text-text-muted hover:text-white transition-all cursor-pointer"
+                  title={t('cv.download_cv', 'Download CV')}
+                  aria-label="Download CV"
+                >
+                  <Download size={15} />
+                </button>
+              </div>
+
               {/* Language Pill Switcher */}
               <div className="flex items-center justify-between p-1.5 rounded-xl bg-surface border border-border">
                 <span className="flex items-center gap-2 pl-2 text-xs font-medium text-text-muted">

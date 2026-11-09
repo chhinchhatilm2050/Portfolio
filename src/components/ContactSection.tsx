@@ -68,7 +68,7 @@ export default function ContactSection() {
     {
       icon: Phone,
       label: t('contact.info_call'),
-      lines: ['+855 60 66 705'],
+      lines: ['+855 60 800 705'],
     },
     {
       icon: Mail,
@@ -78,7 +78,7 @@ export default function ContactSection() {
     {
       icon: MapPin,
       label: t('contact.info_location'),
-      lines: ['Phnom Penh'],
+      lines: ['Terk Thla, Phnom Penh, Cambodia'],
     },
   ]
 

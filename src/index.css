@@ -258,6 +258,47 @@ html.light [role="dialog"] button[aria-label] {
   border-color: #E4E4E7 !important;
 }
 
+/* ── Dark zinc boxes → light grey in Light Mode ── */
+/* Excludes CV Modal (data-cv-modal="true") and its descendants */
+/* Targets bg-zinc-900 icon boxes, social buttons, skill icon boxes */
+html.light *:not([data-cv-modal]):not([data-cv-modal] *) > [class*="bg-zinc-900"]:not([class*="bg-zinc-950"]) {
+  background-color: #F4F4F5 !important;
+}
+
+/* bg-zinc-800 boxes (level badges, tag chips) → light zinc-200 */
+html.light *:not([data-cv-modal]):not([data-cv-modal] *) > [class*="bg-zinc-800"] {
+  background-color: #E4E4E7 !important;
+}
+
+/* Border overrides for zinc-700/800 on icon/badge boxes */
+html.light *:not([data-cv-modal] *) > [class*="border-zinc-800"],
+html.light *:not([data-cv-modal] *) > [class*="border-zinc-700"] {
+  border-color: #D4D4D8 !important;
+}
+
+/* Level badge & muted text: zinc-300 → readable dark */
+html.light *:not([data-cv-modal] *) [class*="text-zinc-300"] {
+  color: #3F3F46 !important;
+}
+
+/* Social/icon link/button text in light mode */
+html.light *:not([data-cv-modal] *) a[class*="bg-zinc-900"],
+html.light *:not([data-cv-modal] *) button[class*="bg-zinc-900"] {
+  color: #52525B !important;
+}
+html.light *:not([data-cv-modal] *) a[class*="bg-zinc-900"]:hover,
+html.light *:not([data-cv-modal] *) button[class*="bg-zinc-900"]:hover {
+  color: #09090B !important;
+  background-color: #E4E4E7 !important;
+}
+
+/* Tag chip pills bg-zinc-800/xx */
+html.light *:not([data-cv-modal] *) [class*="bg-zinc-800\\/"] {
+  background-color: rgba(228, 228, 231, 0.75) !important;
+  border-color: #D4D4D8 !important;
+  color: #52525B !important;
+}
+
 /* ── Tailwind v4 Theme — maps utilities to CSS vars ── */
 @theme inline {
   --font-sans:           var(--font-sans);

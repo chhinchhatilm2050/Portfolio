@@ -5,32 +5,33 @@
     "skills":     "Skills",
     "education":  "Education",
     "projects":   "Projects",
-    "contact":    "Contact"
+    "contact":    "Contact",
+    "cv":         "CV"
   },
   "hero": {
     "greeting":    "Hi, I'm",
     "name":        "Chhin Chhat",
-    "role":        "Full Stack Developer",
+    "role":        "Web Developer",
     "roles": [
+      "Web Developer",
       "Aspiring Full Stack Developer",
-      "Year 2 MIS Student (SETEC)",
-      "Vue.js & Node.js Developer",
-      "Frontend & Backend Explorer"
+      "Year 2 MIS Student (SETEC GPA 3.95)",
+      "Vue.js & Node.js Developer"
     ],
-    "tagline":     "Year 2 Semester 2 MIS student at SETEC Institute. Passionate about building modern, scalable web apps and striving to become a professional Full Stack Developer.",
+    "tagline":     "Motivated MIS Year 2 student at SETEC Institute (GPA 3.95). Passionate about building modern full-stack web applications with Vue, Node.js, Express, MongoDB, and clean RESTful API design.",
     "cta_projects": "View Projects",
     "cta_contact":  "Contact Me",
-    "cta_resume":   "Download CV",
+    "cta_resume":   "View & Download CV",
     "available":    "Available for internships & projects"
   },
   "about": {
     "title":       "About Me",
-    "subtitle":    "Aspiring Full Stack Developer & Year 2 MIS Student",
-    "description": "I am a Year 2, Semester 2 student majoring in Management Information Systems (MIS) at SETEC Institute, where I also studied UI/UX design fundamentals for a semester as part of my curriculum. With practical technical training from Simpaz Center and an intensive Full Stack Web Development bootcamp at TFD, my primary ambition is to become a skilled Full Stack Developer. I build modern web applications using Vue, React, and Angular on the frontend, supported by reliable backend architectures using Node.js, Express, MongoDB, and modern DevOps tools.",
+    "subtitle":    "Aspiring Full Stack Developer & Year 2 MIS Student (GPA 3.95)",
+    "description": "I am a motivated Year 2, Semester 2 student majoring in Management Information Systems (MIS) at SETEC Institute with an outstanding GPA of 3.95/4.0. My background includes a national High School BACII Grade B, 6 months of frontend teamwork training at Simpaz Center, and an intensive Full Stack Web Development bootcamp at TFD. I build responsive, end-to-end applications using Vue.js, TypeScript, Node.js, Express, and MongoDB, with a focus on RESTful APIs, JWT security, and CI/CD best practices.",
     "stats": {
-      "exp_val": "Year 2",
-      "exp_lbl": "Semester 2 (SETEC)",
-      "proj_val": "4+",
+      "exp_val": "3.95",
+      "exp_lbl": "GPA (SETEC MIS)",
+      "proj_val": "5+",
       "proj_lbl": "Completed Projects",
       "sat_val": "100%",
       "sat_lbl": "Dedication & Growth"
@@ -63,16 +64,16 @@
     "roles": [
       {
         "period": "2024 - Present",
-        "title": "Bachelor of Management Information Systems (MIS)",
+        "title": "Bachelor of Management Information Systems (MIS) — GPA: 3.95 / 4.0",
         "company": "SETEC Institute",
-        "desc": "Studying Management Information Systems (MIS), covering system analysis, software engineering, database architecture, enterprise IT systems, and a semester of UI/UX design.",
-        "skills": ["MIS", "Software Engineering", "System Analysis", "Database Systems", "UI/UX Fundamentals", "Figma"]
+        "desc": "Studying Management Information Systems (MIS, Year 2 Semester 2) with a 3.95/4.0 GPA. Curriculum covers software engineering, database systems, system analysis, enterprise architectures, and UI/UX design.",
+        "skills": ["GPA 3.95/4.0", "MIS", "Software Engineering", "System Analysis", "Database Systems", "UI/UX", "Figma"]
       },
       {
         "period": "3 Months",
         "title": "Full Stack Web Developer Bootcamp",
         "company": "TFD Bootcamp",
-        "desc": "Completed intensive 4-month full stack web development training focused on building scalable web with Vue, Express, Node.js, MongoDB, Docker containerization, CI/CD, RESTful APIs, and industry best practices.",
+        "desc": "Completed intensive 3-month full stack web development training focused on building scalable web apps with Vue, Express, Node.js, MongoDB, Docker containerization, CI/CD, RESTful APIs, and industry best practices.",
         "skills": ["Vue.js", "Tailwind CSS", "HTML5/CSS3", "Express.js", "Node.js", "MongoDB", "Docker", "CI/CD", "RESTful API", "Best Practices"]
       },
       {
@@ -81,6 +82,13 @@
         "company": "Simpaz Center",
         "desc": "Completed 6-month hands-on frontend web development training focused on effective teamwork and building responsive user interfaces using HTML, CSS, Bootstrap, JavaScript, TypeScript, and Angular.",
         "skills": ["Teamwork", "HTML5", "CSS3", "Bootstrap", "JavaScript", "TypeScript", "Angular"]
+      },
+      {
+        "period": "2021 - 2023",
+        "title": "National High School Diploma (BACII - Grade B)",
+        "company": "High School",
+        "desc": "Graduated with National High School Diploma (BACII) achieving Grade B, demonstrating strong analytical and logical foundations in mathematics and science.",
+        "skills": ["Grade B", "BACII", "Mathematics", "Science"]
       }
     ]
   },
@@ -101,10 +109,21 @@
     "year_label":      "Timeline",
     "close_modal":     "Close modal"
   },
+  "cv": {
+    "view_cv":         "View CV",
+    "download_cv":     "Download CV",
+    "preview_title":   "Curriculum Vitae (CV)",
+    "preview_subtitle": "Chhin Chhat — Web Developer & MIS Student",
+    "zoom_in":         "Zoom In",
+    "zoom_out":        "Zoom Out",
+    "reset_zoom":      "Reset",
+    "open_tab":        "Open in New Tab",
+    "close":           "Close Preview"
+  },
   "contact": {
     "title":         "Contact Me",
     "get_in_touch":  "Get In Touch",
-    "desc":          "Have a project in mind or just want to say hello? Fill out the form below and I'll get back to you within 24 hours.",
+    "desc":          "Have an opportunity or project in mind? Feel free to reach out directly by phone, email, or send a message below.",
     "info_call":     "Call Me",
     "info_email":    "E-mail",
     "info_location": "Location",
@@ -117,7 +136,7 @@
     "success":       "Message sent successfully! I'll get back to you soon.",
     "error":         "Something went wrong. Please try again.",
     "follow":        "Follow Me",
-    "available":     "Available for freelance & full-time opportunities"
+    "available":     "Available for internships & full-time opportunities"
   },
   "footer": {
     "rights": "All rights reserved."
@@ -127,4 +146,3 @@
     "light": "Light mode"
   }
 }
-

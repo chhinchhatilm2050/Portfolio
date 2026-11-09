@@ -197,7 +197,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
             </div>
 
             {/* Modal Footer CTAs */}
-            <div className="p-4 sm:p-6 bg-zinc-900/60 border-t border-zinc-800/80 flex flex-wrap items-center justify-end gap-3 shrink-0">
+            <div className="p-4 sm:p-6 bg-zinc-900/60 border-t border-zinc-800/80 flex flex-wrap items-center justify-center sm:justify-end gap-3 shrink-0">
               <a
                 href={project.githubUrl}
                 target="_blank"

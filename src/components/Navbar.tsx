@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { Moon, Sun, Globe } from 'lucide-react'
+import { Moon, Sun, Globe, FileText } from 'lucide-react'
 import { useTheme } from '../hooks/useTheme'
+import { useCvModal } from '../context/CvModalContext'
 import MobileNav from './MobileNav'
 
 const NAV_LINKS = [
@@ -17,6 +18,7 @@ const NAV_LINKS = [
 export default function Navbar() {
   const { t, i18n } = useTranslation()
   const { theme, toggleTheme } = useTheme()
+  const { openCvModal } = useCvModal()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('#home')
   const [hoveredSection, setHoveredSection] = useState<string | null>(null)
@@ -162,8 +164,22 @@ export default function Navbar() {
             })}
           </ul>
 
-          {/* Right: Controls (Language Switcher & Theme Toggle) */}
-          <div className="flex items-center gap-2.5">
+          {/* Right: Controls (CV Button, Language Switcher & Theme Toggle) */}
+          <div className="flex items-center gap-2 sm:gap-2.5">
+            {/* CV Modal Trigger Button */}
+            <motion.button
+              type="button"
+              onClick={openCvModal}
+              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.05 }}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-500/10 hover:bg-red-500/20 border border-red-500/30 hover:border-red-500/60 text-red-400 hover:text-red-300 text-xs font-bold transition-all shadow-[0_0_12px_rgba(239,68,68,0.2)] cursor-pointer"
+              title={t('cv.view_cv', 'View & Download CV')}
+              aria-label="View Curriculum Vitae"
+            >
+              <FileText size={13} className="text-red-500" />
+              <span>CV</span>
+            </motion.button>
+
             {/* Desktop Language Switcher Pill */}
             <div className="hidden sm:flex items-center p-1 rounded-full bg-zinc-950/80 border border-zinc-800/80 backdrop-blur-md">
               <button
