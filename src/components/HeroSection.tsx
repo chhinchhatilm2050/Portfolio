@@ -242,8 +242,8 @@ export default function HeroSection() {
   const words = [
     'Web Developer',
     'Aspiring Full Stack Dev',
-    'MIS Student (GPA 3.95)',
-    'Vue.js & Node.js Developer',
+    'MIS Student',
+    'Node.js Developer',
   ]
 
   const { text: typedRole } = useTypingAnimation(words, {
@@ -260,8 +260,8 @@ export default function HeroSection() {
   ]
 
   const stats = [
-    { val: '3.95',   lbl: 'GPA (SETEC MIS)' },
-    { val: 'Year 2', lbl: 'Semester 2' },
+    { val: 'Ready',   lbl: 'For work and internships' },
+    { val: 'Year', lbl: '2 Semester 2' },
     { val: '5+',     lbl: 'Projects Built' },
     { val: '100%',   lbl: 'Commitment & Growth' },
   ]

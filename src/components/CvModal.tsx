@@ -152,14 +152,14 @@ export default function CvModal() {
                     <h3 id="cv-modal-title" className="text-sm sm:text-base font-bold text-white tracking-tight">
                       {t('cv.preview_title', 'Curriculum Vitae (CV)')}
                     </h3>
-                    <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-red-500/15 text-red-400 border border-red-500/30">
+                    {/* <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-red-500/15 text-red-400 border border-red-500/30">
                       <GraduationCap size={11} />
                       GPA 3.95 / 4.0
                     </span>
                     <span className="hidden md:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-zinc-800 text-zinc-300 border border-zinc-700">
                       <Award size={11} className="text-amber-400" />
                       BACII Grade B
-                    </span>
+                    </span> */}
                   </div>
                   <p className="text-[11px] sm:text-xs text-zinc-400">
                     Chhin Chhat • Web Developer • SETEC MIS Year 2
@@ -392,7 +392,7 @@ export default function CvModal() {
                 <span className="truncate">{t('hero.available', 'Available for internships & projects')}</span>
               </span>
               <div className="flex items-center gap-2 sm:gap-3 text-[11px] sm:text-xs shrink-0">
-                <span>+855 60 800 705</span>
+                <span>+855 60 600 705</span>
                 <span className="hidden sm:inline">•</span>
                 <span className="hidden sm:inline">Phnom Penh, Cambodia</span>
               </div>

@@ -68,7 +68,7 @@ export default function ContactSection() {
     {
       icon: Phone,
       label: t('contact.info_call'),
-      lines: ['+855 60 800 705'],
+      lines: ['+855 60 600 705'],
     },
     {
       icon: Mail,

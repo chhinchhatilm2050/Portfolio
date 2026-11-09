@@ -18,7 +18,7 @@
       "និស្សិតឆ្នាំទី ២ MIS (SETEC GPA 3.95)",
       "អ្នកអភិវឌ្ឍន៍ Vue.js & Node.js"
     ],
-    "tagline":     "និស្សិតឆ្នើមឆ្នាំទី ២ ឆមាសទី ២ ជំនាញ MIS នៅវិទ្យាស្ថាន សេដ្ឋិក (SETEC) មាន GPA 3.95។ មានចំណង់ចំណូលចិត្តក្នុងការបង្កើត Web App ជាមួយ Vue, Node.js, Express, MongoDB និង RESTful API។",
+    "tagline":     "និស្សិតឆ្នាំទី២ ឆមាសទី ២ ជំនាញ MIS នៅវិទ្យាស្ថាន ស៊ីតិក។ មានចំណង់ចំណូលចិត្តក្នុងការបង្កើត Web App ជាមួយ Vue, Node.js, Express, MongoDB និង RESTful API។",
     "cta_projects": "មើលគម្រោង",
     "cta_contact":  "ទំនាក់ទំនងខ្ញុំ",
     "cta_resume":   "មើល & ទាញយក CV",
@@ -26,11 +26,11 @@
   },
   "about": {
     "title":       "អំពីខ្ញុំ",
-    "subtitle":    "និស្សិតឆ្នើមឆ្នាំទី ២ MIS (GPA 3.95) មានគោលដៅក្លាយជា Full Stack Developer",
+    "subtitle":    "និស្សិតឆ្នាំទី ២ MIS មានគោលដៅក្លាយជា Full Stack Developer",
     "description": "ខ្ញុំជានិស្សិតឆ្នាំទី ២ ឆមាសទី ២ ជំនាញប្រព័ន្ធព័ត៌មានគ្រប់គ្រង (MIS) នៅវិទ្យាស្ថាន ស៊ីតិក (SETEC Institute) ដែលមានពិន្ទុសិក្សាឆ្នើម GPA 3.95/4.0 និងបានបញ្ចប់សញ្ញាបត្របាក់ឌុបនិទ្ទេស B។ រួមជាមួយការបណ្តុះបណ្តាលពី Simpaz Center និងវគ្គ Full Stack Bootcamp នៅ TFD គោលដៅចម្បងរបស់ខ្ញុំគឺក្លាយជា Full Stack Developer អាជីព។ ខ្ញុំកសាងកម្មវិធី Web ទំនើបជាមួយ Vue.js, TypeScript, Node.js, Express និង MongoDB ជាមួយស្ថាបត្យកម្ម RESTful API និងសុវត្ថិភាព JWT។",
     "stats": {
-      "exp_val": "3.95",
-      "exp_lbl": "GPA (SETEC MIS)",
+      "exp_val": "Available",
+      "exp_lbl": "For work and internships",
       "proj_val": "៥+",
       "proj_lbl": "គម្រោងបានបញ្ចប់",
       "sat_val": "១០០%",

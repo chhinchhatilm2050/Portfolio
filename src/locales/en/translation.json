@@ -18,7 +18,7 @@
       "Year 2 MIS Student (SETEC GPA 3.95)",
       "Vue.js & Node.js Developer"
     ],
-    "tagline":     "Motivated MIS Year 2 student at SETEC Institute (GPA 3.95). Passionate about building modern full-stack web applications with Vue, Node.js, Express, MongoDB, and clean RESTful API design.",
+    "tagline":     "Motivated MIS Year 2 student at SETEC Institute. Passionate about building modern full-stack web applications with Vue, Node.js, Express, MongoDB, and clean RESTful API design.",
     "cta_projects": "View Projects",
     "cta_contact":  "Contact Me",
     "cta_resume":   "View & Download CV",
@@ -26,11 +26,11 @@
   },
   "about": {
     "title":       "About Me",
-    "subtitle":    "Aspiring Full Stack Developer & Year 2 MIS Student (GPA 3.95)",
+    "subtitle":    "Aspiring Full Stack Developer & Year 2 MIS Student",
     "description": "I am a motivated Year 2, Semester 2 student majoring in Management Information Systems (MIS) at SETEC Institute with an outstanding GPA of 3.95/4.0. My background includes a national High School BACII Grade B, 6 months of frontend teamwork training at Simpaz Center, and an intensive Full Stack Web Development bootcamp at TFD. I build responsive, end-to-end applications using Vue.js, TypeScript, Node.js, Express, and MongoDB, with a focus on RESTful APIs, JWT security, and CI/CD best practices.",
     "stats": {
-      "exp_val": "3.95",
-      "exp_lbl": "GPA (SETEC MIS)",
+      "exp_val": "Available",
+      "exp_lbl": "For work and internships",
       "proj_val": "5+",
       "proj_lbl": "Completed Projects",
       "sat_val": "100%",
