@@ -8,8 +8,6 @@ import {
   ZoomIn,
   ZoomOut,
   FileText,
-  Award,
-  GraduationCap,
   Sparkles,
   FileCheck2,
   Eye,
